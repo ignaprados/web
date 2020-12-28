@@ -9,6 +9,10 @@ https://ignacioprados.github.io/web
 
 ![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
 
-![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
+![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview2.JPG)
 
-![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
+![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview3.JPG)
+
+## Preview Mobile
+
+![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview-mobile.JPG)
