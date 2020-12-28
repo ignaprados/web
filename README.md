@@ -2,7 +2,7 @@
  Mi Página Web Ofical.
 <br><br>
  Creador: Ignacio Prados.
- <br>
+ <br><br>
  Key Technologies used: HTML5 - CSS3 - JavaScript
 
 https://ignacioprados.github.io/web
