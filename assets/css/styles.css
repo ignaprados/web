@@ -55,6 +55,7 @@
 }
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body{
   margin: var(--header-height) 0 0 0;
