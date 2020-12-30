@@ -735,6 +735,22 @@ body::-webkit-scrollbar-thumb:active{
   background-color: #ffffff;
 }
 
+/*TEXT CHANGE*/
+
+.home__title,.spin:after{
+  content:'Web Developer';
+  animation: text 9s linear infinite;
+}
+@keyframes text {
+
+  30% {
+    content: "Designer";
+  }
+  60% {
+    content: "Software Eng. Student";
+  }
+}
+
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
