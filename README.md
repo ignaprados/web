@@ -8,6 +8,8 @@
 
 https://ignacioprados.github.io/web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc319ca1-531a-40b0-b353-dc01b91356a3/deploy-status)](https://app.netlify.com/sites/ignacioprados/deploys)
+
 ## Screenshots
 
 ![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview2.JPG)
