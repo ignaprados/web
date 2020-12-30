@@ -358,7 +358,7 @@ img{
   row-gap: 2rem;
 }
 .work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.575);
   border-radius: .5rem;
   overflow: hidden;
 }
