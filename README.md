@@ -8,8 +8,7 @@
 
 https://ignacioprados.github.io/web
 
-## Preview
-
+## Screenshots
 
 ![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview2.JPG)
 
