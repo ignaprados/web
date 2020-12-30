@@ -1,3 +1,4 @@
+![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
 #  WEB IGNACIO PRADOS
  Mi Página Web Ofical.
 <br><br>
@@ -9,7 +10,6 @@ https://ignacioprados.github.io/web
 
 ## Preview
 
-![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
 
 ![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview2.JPG)
 
