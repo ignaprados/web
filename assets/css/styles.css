@@ -63,6 +63,7 @@ body{
   font-size: var(--normal-font-size);
   color: var(--second-color);
   background-color: rgb(37, 37, 37);
+  overflow-x: hidden;
 }
 h1,h2,p{
   margin: 0;
