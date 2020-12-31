@@ -1,8 +1,8 @@
 ![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
 #  WEB IGNACIO PRADOS
- Mi Página Web Ofical.
+ My Official Website.
 <br><br>
- Creador: Ignacio Prados.
+ Creator: Ignacio Prados.
  <br><br>
  Key Technologies used: HTML5 - CSS3 - JavaScript
 
