@@ -81,14 +81,23 @@ const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
 
+window.addEventListener("width", matchMedia); // Attach listener function on state changes
+
+
+var x = window.matchMedia("(min-width: 768px)")
+scrollFunction(x) // Call listener function at run time
+
 function scrollFunction() {
   if (window.pageYOffset > 300) { // Show backToTopButton
-    if(!backToTopButton.classList.contains("btnEntrance")) {
-    backToTopButton.classList.remove("btnExit");
-    backToTopButton.classList.add("btnEntrance");
-    backToTopButton.style.display = "block";
+    if (x.matches){
+        if (!backToTopButton.classList.contains("btnEntrance")) {
+            backToTopButton.classList.remove("btnExit");
+            backToTopButton.classList.add("btnEntrance");
+            backToTopButton.style.display = "block";
+        }
     }
 }
+
   else { // Hide backToTopButton
     if(backToTopButton.classList.contains("btnEntrance")) {
     backToTopButton.classList.remove("btnEntrance");
