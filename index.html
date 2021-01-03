@@ -41,7 +41,7 @@
             <nav class="nav bd-grid">
 
                 <div>
-                    <a href="#" class="nav__logo">Ignacio Prados</a>
+                    <a href="#" class="nav__logo"><img  class="nav__img" id="navlogo" src="assets/img/logo-nav.png" alt="Logo Ignacio Prados"><p>Ignacio Prados</p></a>
                 </div>
 
                 <!-- ===== NAV MENU ===== -->
@@ -250,11 +250,11 @@
 
 
                         <div class="contact__container bd-grid">
-                            <form action="" class="contact__form">
-                                <input type="text" placeholder="Name" class="contact__input">
-                                <input type="mail" placeholder="Email" class="contact__input">
-                                <textarea name="Message" id="" cols="10" rows="10" placeholder="Message" class="contact__input"></textarea>
-                                <input type="button" value="Send" class="contact__button buttonct">
+                            <form name='formulario' id='formulario' method='post' action='./assets/php/confirmacion.php' target='_self' enctype="multipart/form-data" class="contact__form">
+                                <input type='text' name='Nombre' id='Nombre' placeholder="Name" class="contact__input">
+                                <input type='text' name='email' id='email' pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required placeholder="Email" class="contact__input">
+                                <textarea name="mensaje" id="mensaje" cols="10" rows="10" placeholder="Message" class="contact__input"></textarea>
+                                <input id="boton-enviar" type="submit" value="Send" class="contact__button buttonct">
                             </form>
                         </div>
 
@@ -282,7 +282,7 @@
                 </div>
 
                 <!-- ===== FOOTER COPYRIGHT ===== -->
-                <p class="footer__copy">&#169; 2021 Ignacio. All rights reserved</p>
+                <p class="footer__copy">Made with 💜 by Ignacio. &#169; 2021 All rights reserved.</p>
 
             </footer>
 

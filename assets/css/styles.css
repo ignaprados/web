@@ -258,6 +258,25 @@ img{
 
 .nav__logo{
   color: var(--second-color);
+  display: flex;
+  padding-top: 0;
+}
+
+.nav__img{
+  margin-right: 15px;
+  object-position: center;
+}
+
+@media screen and (min-width: 768px){
+  .nav__img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+.nav__logo p{
+  display: none;
+}
 }
 
 .nav__toggle{
@@ -326,6 +345,10 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
+  filter:invert(0.2);
+}
+
+.nav__img{
   filter:invert(0.2);
 }
 

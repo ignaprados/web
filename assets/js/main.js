@@ -146,6 +146,7 @@ const darkTheme = 'dark-theme'
 const iconTheme = 'bxs-toggle-right'
 const themeImage = document.getElementById('logo')
 const imgTheme = 'dark-img'
+const themeImage1 = document.getElementById('navlogo')
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -157,6 +158,8 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 
 const getCurrentImg = () => themeImage.classList.contains(imgTheme) ? 'dark-img' : 'light-img'
 
+const getCurrentImg1 = () => themeImage1.classList.contains(imgTheme) ? 'dark-img' : 'light-img'
+
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bxs-toggle-right'
 
 // We validate if the user previously chose a topic
@@ -165,6 +168,8 @@ if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
 
     themeImage.classList[selectedImg === 'dark-img' ? 'add' : 'remove'](imgTheme)
+
+    themeImage1.classList[selectedImg === 'dark-img' ? 'add' : 'remove'](imgTheme)
 
     themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
 }
@@ -175,6 +180,7 @@ themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
     themeImage.classList.toggle(imgTheme)
+    themeImage1.classList.toggle(imgTheme)
 
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
