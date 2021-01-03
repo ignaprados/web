@@ -163,6 +163,8 @@ img{
 .section{
   padding-top: 3rem;
   padding-bottom: 2rem;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .send1{
@@ -866,6 +868,13 @@ td .fas{
 @media screen and (max-width: 710px){
   .hab__container{
     display: none;
+  }
+}
+
+@media screen and (max-with: 768px){
+  #back-to-top-btn{
+    display:none !important;
+    visibility: hidden !important;
   }
 }
 
