@@ -410,23 +410,42 @@ img{
   background-color: var(--nav-color);
 }
 
-.buttonlt{
+.buttonct{
   display: inline-block;
-  background-color: #FFF;
-  color: var(--first-color);
+  background-color: var(--nav-color);
+  color: var(--second-color);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 1rem;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  border: solid #FFF 2px;
+  border: solid var(--second-color) 1.5px;
   text-align: center;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
 }
 
-.buttonlt:hover{
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
-  color: #FFF;
-  background-color: var(--first-color);
+.buttonct:active{
+  transform: scale(0.95);
+}
+
+.buttonct1{
+  display: inline-block;
+  background-color: var(--nav-color);
+  color: var(--second-color);
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 1rem;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border: solid var(--second-color) 1.5px;
+  text-align: center;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.buttonct1:active{
+  transform: scale(0.98);
 }
 
 
@@ -629,6 +648,34 @@ td .fas{
 }
 
 
+/* ===== CONTACT ===== */
+.contact__input{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+  background-color: var(--nav-color);
+  color: var(--second-color);
+  resize: none;
+}
+.contact__button{
+  display: block;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: var(--mb-4);
+}
+
+.contact__input::placeholder{
+  color: var(--second-color);
+}
+
+
 /* ===== FOOTER ===== */
 .footer{
   background-color: var(--nav-color);
@@ -788,7 +835,7 @@ td .fas{
   }
 
   .contact__form{
-    width: 360px;
+    width: 100%;
   }
 
   .contact__container{

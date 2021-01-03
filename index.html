@@ -50,8 +50,9 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 
                         <li class="nav__item"><i class='bx bxs-toggle-left change-theme' id="theme-button"></i></li>
                     </ul>
@@ -86,7 +87,7 @@
                 <!-- ===== TITTLE & CONTACT BUTTON ===== -->
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br> I'm <span class="home__title-color">Ignacio.</span><br><span class="spin"></span>.</h1>
-                    <a href="mailto:ignacioprados.ip@gmail.com" class="button" >Contact</a>
+                    <a href="#contact" class="button" >Contact</a>
                 </div>
 
                 <!-- ===== SOCIAL ICONS ===== -->
@@ -105,45 +106,45 @@
 
             </section>
 
-                        <!--========== ABOUT ==========-->
-                        <section class="send section" id="about">
-                            <div class="send__container">
-                                <div class="bd-container bd-grid">
-                                    <div class="send__content">
-                                        <h2 class="section-title-center send__title">About</h2>
-                                        <p class="send__description">I'm a Trainee Web Developer who wants to gain experience and improve his programming skills by making projects.
-                                        Currently studying Software Engineering. I consider myself a person who like to think ahead with the idea of trying to face the needs of tomorrow.</p>
-                                    </div>
+            <!--========== ABOUT ==========-->
+            <section class="send section" id="about">
+                <div class="send__container">
+                    <div class="bd-container bd-grid">
+                        <div class="send__content">
+                            <h2 class="section-title-center send__title">About</h2>
+                            <p class="send__description">I'm a Trainee Web Developer who wants to gain experience and improve his programming skills by making projects.
+                            Currently studying Software Engineering. I consider myself a person who like to think ahead with the idea of trying to face the needs of tomorrow.</p>
+                        </div>
 
-                                    <div class="send__img">
-                                        <table class="infome">
-                                            <tr>
-                                            <td class="me"><i class="fas fa-user"></i></td>
-                                            <td class="me"><p>Ignacio Prados</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="me"><i class="fas fa-volume-up"></i></td>
-                                                <td class="me"><p>Spanish & English</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="me"><i class="fas fa-map-marker-alt"></i></td>
-                                                <td class="me"><p>Buenos Aires, Argentina</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    </div>
-                                <!-- ===== CV BUTTON ===== -->
-                                <a href="assets/img/CV-IgnacioPrados.pdf" target="_blank" class="buttoncv " >Download CV</a>
+                        <div class="send__img">
+                            <table class="infome">
+                                <tr>
+                                <td class="me"><i class="fas fa-user"></i></td>
+                                <td class="me"><p>Ignacio Prados</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-volume-up"></i></td>
+                                    <td class="me"><p>Spanish & English</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-map-marker-alt"></i></td>
+                                    <td class="me"><p>Buenos Aires, Argentina</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                    <!-- ===== CV BUTTON ===== -->
+                    <a href="assets/img/CV-IgnacioPrados.pdf" target="_blank" class="buttoncv " >Download CV</a>
 
-                            </div>
+                </div>
 
 
-                        </section>
+            </section>
 
-            <!-- ===== PROJECTS ===== -->
+            <!-- ===== WORK ===== -->
             <section class="work section" id="work">
 
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">Work</h2>
 
                     <div class="work__container bd-grid">
 
@@ -240,16 +241,28 @@
             </section>
 
 
-            <!--========== LET'S TALK==========-->
-            <section class="send1 section1" >
+            <!--========== CONTACT==========-->
+            <section class="send1 section1 contact" id="contact">
                 <div class="send__container1">
                     <div class="send__content1 bd-grid">
-                        <h2 class="section-title-center send__title1">Let’s Talk</h2>
+                        <h2 class="section-title-center send__title1">Contact</h2>
                         <p class="send__description"></p>
-                            <!-- ===== CONTACT BUTTON ===== -->
-                            <a href="mailto:ignacioprados.ip@gmail.com" class="buttonlt" >Contact</a>
+
+
+                        <div class="contact__container bd-grid">
+                            <form action="" class="contact__form">
+                                <input type="text" placeholder="Name" class="contact__input">
+                                <input type="mail" placeholder="Email" class="contact__input">
+                                <textarea name="Message" id="" cols="10" rows="10" placeholder="Message" class="contact__input"></textarea>
+                                <input type="button" value="Send" class="contact__button buttonct">
+                            </form>
+                        </div>
+
+                        <!-- ===== EMAIL BUTTON ===== -->
+                        <a href="mailto:ignacioprados.ip@gmail.com" class="buttonct1 bd-grid" >Or send me an Email</a>
                     </div>
                 </div>
+
             </section>
 
 
