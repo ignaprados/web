@@ -380,7 +380,7 @@ img{
 
 /* ===== TEXT CHANGE ===== */
 .home__title,.spin:after{
-  content:'Desarrollador Web';
+  content:'UX/UI';
   animation: text 9s linear infinite;
 }
 
