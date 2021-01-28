@@ -380,17 +380,17 @@ img{
 
 /* ===== TEXT CHANGE ===== */
 .home__title,.spin:after{
-  content:'UX/UI';
+  content:'UX/UI.';
   animation: text 9s linear infinite;
 }
 
 @keyframes text {
 
   30% {
-    content: "Diseñador";
+    content: "Diseñador.";
   }
   60% {
-    content: "Full Stack Dev";
+    content: "Full Stack Dev.";
   }
 }
 
@@ -456,17 +456,18 @@ img{
 
 .buttonct1{
   display: inline-block;
-  background-color: var(--nav-color);
-  color: var(--second-color);
+  background-color: var(--second-color);
+  color: var(--nav-color);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 1rem;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  border: solid var(--second-color) 1.5px;
+  border: solid var(--nav-color) 1.5px;
   text-align: center;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
+  margin-bottom: 0.9rem;
 }
 
 .buttonct1:active{
