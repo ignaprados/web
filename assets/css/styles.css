@@ -287,7 +287,7 @@ img{
 
 
 /* ===== ACTIVE MENU ===== */
-.active::after{
+.nav__link.active::after{
   position: absolute;
   content: "";
   width: 100%;
@@ -657,6 +657,7 @@ td .fas{
 
 .work__img img:hover{
   transform: scale(1.1);
+  filter:brightness(0.4);
 }
 
 .hab__img{
@@ -1156,6 +1157,126 @@ body::-webkit-scrollbar-thumb:active{
   background-color: var(--first-color);
 }
 
+
+/* ===== POPUP WORK=====*/
+
+.overlay {
+	background: rgba(0,0,0,.6);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.active {
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+.popup {
+	background: var(--nav-color);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 28px 28px 25px 25px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+  width: 700px;
+  height: 700px;
+
+	transition: .3s ease all;
+	transform: scale(0.7);
+  opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 25px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+  color: #ffffff;
+  position: absolute;
+  right: 1.3rem;
+  top: 1rem;
+  z-index: 1;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: rgb(218, 218, 218);
+}
+
+.popup-img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup p {
+  font-size: 26px;
+  font-weight: 300;
+  opacity: 0;
+  color: #000;
+}
+
+
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active p { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
