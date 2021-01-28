@@ -1183,15 +1183,26 @@ body::-webkit-scrollbar-thumb:active{
 	background: var(--nav-color);
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 	border-radius: 28px 28px 25px 25px;
-	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	text-align: center;
   width: 700px;
-  height: 700px;
+  height: 710px;
 
 	transition: .3s ease all;
 	transform: scale(0.7);
   opacity: 0;
+}
+
+@media screen and (max-width: 451px){
+  .popup{
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .popup{
+    height: 770px;
+  }
 }
 
 .popup .btn-cerrar-popup {
@@ -1208,7 +1219,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 .popup .btn-cerrar-popup:hover {
-	color: rgb(218, 218, 218);
+	color: var(--first-color);
 }
 
 .popup-img{
@@ -1216,7 +1227,7 @@ body::-webkit-scrollbar-thumb:active{
   display: block;
   margin: auto;
   width: 100%;
-  height: 50%;
+  height: 355px;
   border-radius: 25px 25px 0px 0px;
   object-fit: cover;
   object-position: top;
@@ -1228,55 +1239,39 @@ body::-webkit-scrollbar-thumb:active{
 .popup h3 {
 	font-size: 36px;
 	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+  margin-bottom: 10px;
+  margin-top: 350px;
+  opacity: 0;
+  color: var(--second-color);
+  border-bottom: 3px solid var(--second-color);
+  text-align: left;
+  padding-bottom: 15px;
 }
 
 .popup p {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 15px;
   opacity: 0;
-  color: #000;
+  color: var(--second-color);
+  text-align: left;
 }
 
+.verpro{
+  opacity: 0;
+}
 
+.popupbtn{
+  margin-top: 10px;
+}
 
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active p { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+.popup.active h3 { opacity: 1; }
+.popup.active p { opacity: 1; }
+.popup.active .contenedor-inputs { opacity: 1; }
+.popup.active .verpro { opacity: 1; }
 
-@keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
