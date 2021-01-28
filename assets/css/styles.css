@@ -267,13 +267,13 @@ img{
   object-position: center;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 865px){
   .nav__img{
     display: none;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 865px){
 .nav__logo p{
   display: none;
 }
@@ -380,17 +380,17 @@ img{
 
 /* ===== TEXT CHANGE ===== */
 .home__title,.spin:after{
-  content:'Web Developer';
+  content:'Desarrollador Web';
   animation: text 9s linear infinite;
 }
 
 @keyframes text {
 
   30% {
-    content: "Designer";
+    content: "Diseñador";
   }
   60% {
-    content: "Soft. Eng. Student";
+    content: "Full Stack Dev";
   }
 }
 
