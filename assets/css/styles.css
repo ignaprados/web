@@ -1181,7 +1181,7 @@ body::-webkit-scrollbar-thumb:active{
 
 .popup {
 	background: var(--nav-color);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
 	border-radius: 28px 28px 25px 25px;
 	padding: 20px;
 	text-align: center;
