@@ -1191,6 +1191,7 @@ body::-webkit-scrollbar-thumb:active{
 	transition: .3s ease all;
 	transform: scale(0.7);
   opacity: 0;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 451px){
@@ -1268,7 +1269,7 @@ body::-webkit-scrollbar-thumb:active{
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active {	visibility: visible; transform: scale(1); opacity: 1; }
 .popup.active h3 { opacity: 1; }
 .popup.active p { opacity: 1; }
 .popup.active .contenedor-inputs { opacity: 1; }
