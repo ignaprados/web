@@ -557,7 +557,7 @@ img{
 }
 
 .send1{
-  background-color: var(--first-color);
+  background-color: var(--nav-color);
   z-index: var(--z-normal);
   position: relative;
 }
