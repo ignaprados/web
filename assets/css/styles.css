@@ -106,7 +106,6 @@ body.dark-theme{
   text-align: center;
   color: var(--title-color);
   font-size: 2rem;
-  cursor: pointer;
 }
 
 
@@ -259,7 +258,7 @@ img{
   font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 880px){
   .nav__menu{
     position: fixed;
     top: var(--header-height);
@@ -321,13 +320,13 @@ img{
   object-position: center;
 }
 
-@media screen and (min-width: 865px){
+@media screen and (min-width: 975px){
   .nav__img{
     display: none;
   }
 }
 
-@media screen and (max-width: 865px){
+@media screen and (max-width: 975px){
 .nav__logo p{
   display: none;
 }
@@ -835,7 +834,7 @@ td .fas{
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 880px){
   body{
     margin: 0;
   }
