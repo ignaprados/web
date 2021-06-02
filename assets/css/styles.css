@@ -504,21 +504,16 @@ img{
   transition-timing-function: ease-in-out;
 }
 
-.buttonct:active{
-  transform: scale(0.95);
+.buttonct:hover{
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  color: var(--first-color);
+  background-color: var(--nav-color);
+  border: solid var(--first-color) 1.5px;
 }
 
 .buttonct1{
-  display: inline-block;
-  background-color: var(--second-color);
-  color: var(--nav-color);
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: 1rem;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  border: solid var(--nav-color) 1.5px;
-  text-align: center;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
   margin-bottom: 0.9rem;
@@ -588,7 +583,7 @@ img{
 }
 
 .send__title1{
-  color: #FFF;
+  color: var(--second-color);
   text-align: center;
 }
 
@@ -737,13 +732,18 @@ td .fas{
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 15px;
-  border: 1.5px solid var(--second-color);
+  border: 1.7px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
   background-color: var(--nav-color);
   color: var(--second-color);
   resize: none;
 }
+
+.contact__input:focus{
+  border: 1.7px solid var(--first-color);
+}
+
 .contact__button{
   display: block;
   outline: none;
@@ -939,7 +939,7 @@ td .fas{
   }
 
   .send__container1{
-    background-color: var(--first-color);
+    background-color: var(--nav-color);
     padding: 2rem;
     border-radius: 1.5rem;
   }
