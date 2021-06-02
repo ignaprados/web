@@ -32,6 +32,11 @@
 
     </head>
     <body>
+        <div class="custom-cursor" id="js-cursor">
+            <div class="cursor__small abs-center" id="js-cursor__small"></div>
+            <div class="cursor__big abs-center" id="js-cursor__big">
+            </div>
+        </div>
 
 
         <!-- ===== HEADER ===== -->
@@ -54,7 +59,7 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
 
-                        <li class="nav__item"><i class='bx bxs-toggle-left change-theme' id="theme-button"></i></li>
+                        <li class="nav__item"><i class='bx bxs-toggle-left change-theme curserhover' id="theme-button"></i></li>
                     </ul>
 
                 </div>
@@ -87,16 +92,16 @@
                 <!-- ===== TITTLE & CONTACT BUTTON ===== -->
                 <div class="home__data">
                     <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Ignacio.</span><br><span class="spin"></span></h1>
-                    <a href="#contact" class="button" >Hablemos !</a>
+                    <a href="#contact" class="button curserhover" >Hablemos !</a>
                 </div>
 
                 <!-- ===== SOCIAL ICONS ===== -->
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="https://github.com/IgnacioPrados" target="_blank" class="home__social-icon"><i class='fab fa-github' ></i></a>
-                    <a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="home__social-icon"><i class='far fa-envelope' ></i></a>
-                    <a href="https://dev.to/ignacioprados" target="_blank" class="home__social-icon"><i class='fab fa-dev'></i></a>
-                    <a href="https://stackoverflow.com/users/14914160/ignacio-prados?tab=profile" target="_blank" class="home__social-icon"><i class='fab fa-stack-overflow'></i></a>
+                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="home__social-icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://github.com/IgnacioPrados" target="_blank" class="home__social-icon curserhover"><i class='fab fa-github' ></i></a>
+                    <a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="home__social-icon curserhover"><i class='far fa-envelope' ></i></a>
+                    <a href="https://dev.to/ignacioprados" target="_blank" class="home__social-icon curserhover"><i class='fab fa-dev'></i></a>
+                    <a href="https://stackoverflow.com/users/14914160/ignacio-prados?tab=profile" target="_blank" class="home__social-icon curserhover"><i class='fab fa-stack-overflow'></i></a>
                 </div>
 
                 <!-- ===== LOGO ===== -->
@@ -134,7 +139,7 @@
                         </div>
                         </div>
                     <!-- ===== CV BUTTON ===== -->
-                    <a href="assets/img/CV-IgnacioPrados.pdf" target="_blank" class="buttoncv " >Ver Curriculum (CV)</a>
+                    <a href="assets/img/CV-IgnacioPrados.pdf" target="_blank" class="buttoncv curserhover" >Ver Curriculum (CV)</a>
 
                 </div>
 
@@ -330,7 +335,7 @@
                                 <input type='text' name='name' id='Nombre' required placeholder="Nombre *" class="contact__input">
                                 <input type='text' name='email' id='email' pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required placeholder="Email *" class="contact__input">
                                 <textarea name="message" id="mensaje" required cols="10" rows="10" placeholder="Mensaje *" class="contact__input"></textarea>
-                                <input id="boton-enviar" type="submit" value="Enviar" class="contact__button buttonct">
+                                <input id="boton-enviar" type="submit" value="Enviar" class="contact__button buttonct curserhover">
                             </form>
                         </div>
 
@@ -351,11 +356,11 @@
 
                 <!-- ===== FOOTER SOCIAL LINKS ===== -->
                 <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="footer__icon"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="https://github.com/IgnacioPrados" target="_blank" class="footer__icon"><i class='fab fa-github' ></i></a>
-                    <a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="footer__icon"><i class='far fa-envelope' ></i></a>
-                    <a href="https://dev.to/ignacioprados" target="_blank" class="footer__icon"><i class='fab fa-dev'></i></a>
-                    <a href="https://stackoverflow.com/users/14914160/ignacio-prados?tab=profile" target="_blank" class="footer__icon"><i class='fab fa-stack-overflow'></i></a>
+                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="footer__icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://github.com/IgnacioPrados" target="_blank" class="footer__icon curserhover"><i class='fab fa-github' ></i></a>
+                    <a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="footer__icon curserhover"><i class='far fa-envelope' ></i></a>
+                    <a href="https://dev.to/ignacioprados" target="_blank" class="footer__icon curserhover"><i class='fab fa-dev'></i></a>
+                    <a href="https://stackoverflow.com/users/14914160/ignacio-prados?tab=profile" target="_blank" class="footer__icon curserhover"><i class='fab fa-stack-overflow'></i></a>
                 </div>
 
                 <!-- ===== FOOTER COPYRIGHT ===== -->
@@ -386,12 +391,16 @@
                 crossorigin="anonymous"
             ></script>
 
+            <!-- ===== JQUERY LIBRARY ===== -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
             <!--===== SCROLL REVEAL =====-->
             <script src="https://unpkg.com/scrollreveal"></script>
 
             <!--===== MAIN JS =====-->
             <script src="assets/js/main.js"></script>
 
+        </div>
     </body>
 
 </html>
