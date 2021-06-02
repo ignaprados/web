@@ -107,6 +107,11 @@ sr.reveal('.buttoncv',{origin:'bottom'});
 sr.reveal('.send__content',{delay: 300, origin: 'left'});
 sr.reveal('.send__img',{delay: 300, origin: 'right'});
 
+/* = SCROLL EXPERIENCE = */
+sr.reveal('.qualification__button',{origin:'top'});
+sr.reveal('.exp',{origin:'top'});
+
+
 /* = SCROLL SKILLS = */
 sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{});

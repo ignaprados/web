@@ -26,6 +26,7 @@
   --nav-color: #efefef;
   --card-color:#FFF;
   --card2-color:#363636;
+  --wave-color: #fcfcfc;
 }
 
 
@@ -40,7 +41,8 @@ body.dark-theme{
   --nav-color: rgb(48, 48, 48);
   --card-color:#363636;
   --card2-color:#FFF;
-  transition-duration: 0.2s;
+  --wave-color: rgb(71, 71, 71);
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 
 
@@ -203,6 +205,13 @@ img{
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+.section-title2{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
 
 .section-title::after{
   position: absolute;
@@ -221,6 +230,14 @@ img{
   padding-bottom: 2rem;
   padding-left: 4%;
   padding-right: 4%;
+}
+
+.section1{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0%;
+  padding-right: 0%;
+  position: relative;
 }
 
 .send1{
@@ -571,6 +588,16 @@ img{
   max-width: 1024px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.send__container2{
+  padding-bottom: 2.5rem;
+  background-color: var(--nav-color);
+}
+
+.send__container3{
+  padding-bottom: 2rem;
+  background-color: var(--wave-color);
 }
 
 .send__title{
