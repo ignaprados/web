@@ -111,8 +111,8 @@ sr.reveal('.send__img',{delay: 300, origin: 'right'});
 sr.reveal('.qualification__button',{origin:'top'});
 sr.reveal('.exp',{origin:'top'});
 
-
 /* = SCROLL SKILLS = */
+sr.reveal('.section-title2',{origin:'top'});
 sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{});
 sr.reveal('.about__text',{interval: 200, origin: 'bottom'});
@@ -123,6 +123,7 @@ sr.reveal('.work__img',{interval: 150, origin:'top'});
 
 /* = SCROLL LET'S TALK = */
 sr.reveal('.send__content1',{delay: 200, origin: 'bottom'});
+sr.reveal('.exp2',{delay: 200, origin: 'bottom'});
 
 /* = SCROLL CONTACT = */
 sr.reveal('.contact__input',{interval: 200});
