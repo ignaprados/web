@@ -20,13 +20,17 @@
   --first-color: #8b72af;
   --second-color: #363636;
   --third-color: rgb(0, 0, 0);
-  --fourth-color: rgb(231, 231, 231);
+  --fourth-color: #ffffff;
   --five-color: #000;
   --body-color: rgb(228, 228, 228);
   --nav-color: #efefef;
   --card-color:#FFF;
   --card2-color:#363636;
-  --wave-color: #fcfcfc;
+  --wave-color: #ffffff;
+  --wave1-color: #ffffff;
+  --wave2-color: #FFF;
+  --wave3-color: rgb(228, 228, 228);
+  --wave4-color: #efefef;
   --cursor-color:#be940a ;
 }
 
@@ -36,13 +40,17 @@ body.dark-theme{
   --first-color: #8b72af;
   --second-color: #ffffff;
   --third-color: rgb(255, 255, 255);
-  --fourth-color: rgb(231, 231, 231);
+  --fourth-color: #ffffff;
   --five-color: rgb(255, 255, 255);
   --body-color: rgb(37, 37, 37);
   --nav-color: rgb(48, 48, 48);
   --card-color:#363636;
   --card2-color:#FFF;
   --wave-color: rgb(58, 58, 58);
+  --wave2-color: #363636;
+  --wave1-color: rgb(58, 58, 58);
+  --wave3-color: rgb(37, 37, 37);
+  --wave4-color: rgb(48, 48, 48);
   --cursor-color:#dfb309 ;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
@@ -914,7 +922,7 @@ td .fas{
 
 /* ===== FOOTER ===== */
 .footer{
-  background-color: var(--nav-color);
+  background-color: var(--wave4-color);
   color: var(--second-color);
   text-align: center;
   display: block;
@@ -1754,14 +1762,40 @@ body::-webkit-scrollbar-thumb:active{
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height:90px;
+    min-height:90px;
   }
   .content {
     height:30vh;
   }
   h1 {
     font-size:24px;
+  }
+}
+
+@media (max-width: 880px){
+  :root{
+    --wave1-color: #b7a1d6;
+    --wave2-color: #a38ac5;
+    --wave3-color: #9d81c5;
+    --wave4-color: #8b72af;
+  }
+
+  body.dark-theme{
+    --wave1-color: #b7a1d6;
+    --wave2-color: #a38ac5;
+    --wave3-color: #9d81c5;
+    --wave4-color: #8b72af;
+  }
+
+  .footer{
+    color: var(--fourth-color);
+  }
+  .footer__icon{
+    color: var(--fourth-color);
+  }
+  .footer__icon:hover{
+    color: var(--fourth-color);
   }
 }
 
