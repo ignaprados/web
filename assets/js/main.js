@@ -396,6 +396,7 @@ $(document).ready(function() {
     arrows: false,
     dots: false,
     draggable: false,
+    touchMove: false,
     pauseOnHover: false,
     pauseOnFocus:false,
     responsive: [{
