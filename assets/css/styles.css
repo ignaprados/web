@@ -1481,6 +1481,14 @@ body::-webkit-scrollbar-thumb:active{
 
 /* ========== SKILLS SLIDER ==========*/
 
+.sliderlogo{
+  max-width: 1024px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+}
+
 /* Slider */
 .slick-slide {
   margin: 0px 20px;
