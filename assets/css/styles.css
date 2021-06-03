@@ -1337,7 +1337,7 @@ td .fas{
 .intro-text {
   color: rgb(233, 233, 233);
   font-family: "Heebo", sans-serif;
-  font-size: 3rem;
+  font-size: 9rem;
   z-index: var(--z-fixed);
 }
 
@@ -1348,6 +1348,7 @@ td .fas{
   padding-right: 2%;
   box-sizing: border-box;
   z-index: var(--z-fixed);
+  font-size: 9rem;
 }
 
 .hide span {
