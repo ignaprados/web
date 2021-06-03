@@ -81,6 +81,12 @@ body.dark-theme{
   pointer-events: none;
 }
 
+@media screen and (max-width: 768px){
+  .custom-cursor{
+    display: none;
+  }
+}
+
 .cursor__small {
   width: 20px;
   height: 20px;
