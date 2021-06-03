@@ -397,6 +397,8 @@ $(document).ready(function() {
     dots: false,
     draggable: false,
     touchMove: false,
+    swipeToSlide: false,
+    swipe: false,
     pauseOnHover: false,
     pauseOnFocus:false,
     responsive: [{
