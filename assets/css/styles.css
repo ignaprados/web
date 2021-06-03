@@ -593,7 +593,7 @@ img{
 .send1{
   z-index: var(--z-normal);
   position: relative;
-  background: linear-gradient(-45deg, #ffffff, #65537e, #7b629e, #000000);
+  background: linear-gradient(-45deg, #ffffff, #45335f, #ab8cd6, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
