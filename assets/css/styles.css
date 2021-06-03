@@ -239,9 +239,7 @@ img{
   position: relative;
 }
 
-.send1{
-  padding-bottom: 2rem;
-}
+
 
 
 
@@ -574,7 +572,7 @@ img{
 .send1{
   z-index: var(--z-normal);
   position: relative;
-  background: linear-gradient(-45deg, #ffffff, #65537e, #9958f3, #000000);
+  background: linear-gradient(-45deg, #ffffff, #65537e, #7b629e, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -606,6 +604,7 @@ img{
   max-width: 1024px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding-bottom: var(--mb-4);
 }
 
 .send__container2{
@@ -691,7 +690,7 @@ td .fas{
 }
 
 .qualification__icon{
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-right: var(--mb-0-25);
 }
 
@@ -911,11 +910,11 @@ td .fas{
   background-color: var(--nav-color);
   color: var(--second-color);
   text-align: center;
-  padding: 2rem 0;
   display: block;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.719);
   z-index: var(--z-normal);
   position:relative;
+  padding-top: var(--mb-4);
+  padding-bottom: var(--mb-5);
 }
 
 .footer__title{
@@ -1481,6 +1480,87 @@ body::-webkit-scrollbar-thumb:active{
 
 /* ========== SKILLS SLIDER ==========*/
 
+/* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+[data-tooltip] {
+  position: relative;
+  z-index: 10;
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+  z-index: 1000;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  padding: 10px 18px;
+  min-width: 50px;
+  max-width: 300px;
+  width: max-content;
+  width: -moz-max-content;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: rgba(59, 72, 80, 0.9);
+  background-image: linear-gradient(30deg,
+    rgba(59, 72, 80, 0.44),
+    rgba(59, 68, 75, 0.44),
+    rgba(60, 82, 88, 0.44));
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+  transform: translate(-50%, -5px) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+  content: '';
+  border-style: solid;
+  border-width: 5px 5px 0px 5px; /* CSS triangle */
+  border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+  transition-duration: 0s; /* If the mouse leaves the element,
+                              the transition effects for the
+                              tooltip arrow are "turned off" */
+  transform-origin: top;   /* Orientation setting for the
+                              slide-down effect */
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+  transition-delay: 0.3s;
+  transform: translate(-50%, -5px) scale(1);
+}
+/* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
+[data-tooltip]:hover:after {
+  transition-delay: 0.5s; /* Starting after the grow effect */
+  transition-duration: 0.2s;
+  transform: translateX(-50%) scaleY(1);
+}
+
+/**/
+
 .sliderlogo{
   max-width: 1024px;
   text-align: center;
@@ -1488,6 +1568,15 @@ body::-webkit-scrollbar-thumb:active{
   padding-bottom: 1rem;
   padding-top: 5rem;
 }
+
+.sliderlogo2{
+  max-width: 1024px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+
 
 /* Slider */
 .slick-slide {
@@ -1528,10 +1617,7 @@ body::-webkit-scrollbar-thumb:active{
   outline: none;
 }
 
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
+
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -1585,9 +1671,7 @@ body::-webkit-scrollbar-thumb:active{
   display: none;
 }
 
-.slick-slide.dragging img {
-  pointer-events: none;
-}
+
 
 .slick-initialized .slick-slide {
   display: block;
@@ -1610,7 +1694,69 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 
+/* ========== FOOTER WAVES ==========*/
 
+.flex { /*Flexbox for containers*/
+  justify-content: center;
+  align-items: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  text-align:center;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
 
 
 

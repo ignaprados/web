@@ -98,7 +98,7 @@ const sr = ScrollReveal({
 /* = SCROLL HOME = */
 sr.reveal('.home__title',{delay:100, origin:'top'});
 sr.reveal('.button',{delay: 100, origin: 'bottom'});
-/*sr.reveal('.home__img',{delay: 400, origin: 'bottom'});*/
+sr.reveal('.home__img',{delay: 400, origin: 'bottom'});
 sr.reveal('.home__social-icon',{ interval: 300, origin: 'top'});
 
 
@@ -110,13 +110,14 @@ sr.reveal('.send__img',{delay: 300, origin: 'right'});
 /* = SCROLL EXPERIENCE = */
 sr.reveal('.qualification__button',{origin:'top'});
 sr.reveal('.exp',{origin:'top'});
+sr.reveal('.container',{origin:'top'});
 
 /* = SCROLL SKILLS = */
 sr.reveal('.section-title2',{origin:'top'});
 sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{});
 sr.reveal('.about__text',{interval: 200, origin: 'bottom'});
-sr.reveal('.hab__img',{delay: 200, origin: 'top'});
+sr.reveal('.customer-logos',{delay: 200, origin: 'top'});
 
 /* = SCROLL WORK = */
 sr.reveal('.work__img',{interval: 150, origin:'top'});
@@ -394,14 +395,16 @@ $(document).ready(function() {
     autoplaySpeed: 1000,
     arrows: false,
     dots: false,
+    draggable: false,
     pauseOnHover: false,
+    pauseOnFocus:false,
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 880,
       settings: {
         slidesToShow: 3
       }
     }, {
-      breakpoint: 520,
+      breakpoint: 550,
       settings: {
         slidesToShow: 2
       }
