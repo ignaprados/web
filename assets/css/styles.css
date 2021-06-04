@@ -31,7 +31,7 @@
   --wave2-color: #FFF;
   --wave3-color: rgb(228, 228, 228);
   --wave4-color: #efefef;
-  --cursor-color:#be940a ;
+  --cursor-color:#8b72af ;
 }
 
 
@@ -51,7 +51,7 @@ body.dark-theme{
   --wave1-color: rgb(58, 58, 58);
   --wave3-color: rgb(37, 37, 37);
   --wave4-color: rgb(48, 48, 48);
-  --cursor-color:#dfb309 ;
+  --cursor-color:#8b72af ;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 
