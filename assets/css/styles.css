@@ -79,6 +79,8 @@ body.dark-theme{
   top: -40px;
   left: -40px;
   pointer-events: none;
+  transition-duration: 220ms;
+  transition-timing-function: ease-out;
 }
 
 @media screen and (max-width: 768px){
@@ -93,7 +95,8 @@ body.dark-theme{
   border-radius: 50%;
   border: solid 2.1px var(--cursor-color);
   z-index: 5;
-  margin: -5px 0 0 -5px;
+  margin: -9px 0 0 -9px;
+  transform: scale(1);
 }
 
 .cursor__big {
@@ -114,6 +117,23 @@ body.dark-theme{
   transition: all 320ms cubic-bezier(0.26, 0.01, 0.17, 1);
 }
 
+.cursor__big2 {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: var(--cursor-color) 2.1px solid;
+  z-index: 1;
+  opacity: 1;
+  margin: -80px 0 0 -80px;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -moz-transition: all 320ms cubic-bezier(0.26, 0.01, 0.17, 1);
+  -o-transition: all 320ms cubic-bezier(0.26, 0.01, 0.17, 1);
+  -webkit-transition: all 320ms cubic-bezier(0.26, 0.01, 0.17, 1);
+  transition: all 320ms cubic-bezier(0.26, 0.01, 0.17, 1);
+}
 
 
 /*========== Button Dark/Light ==========*/
@@ -124,6 +144,7 @@ body.dark-theme{
   text-align: center;
   color: var(--title-color);
   font-size: 2rem;
+  cursor: pointer
 }
 
 
@@ -170,13 +191,11 @@ body.dark-theme{
 /* ===== BASE ===== */
 *,::before,::after{
   box-sizing: border-box;
-  cursor: none;
 }
 
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
-  cursor: none;
 }
 
 body{
@@ -207,7 +226,6 @@ ul{
 
 a{
   text-decoration: none;
-  cursor: none;
 }
 
 img{
@@ -695,6 +713,7 @@ td .fas{
 .qualification__button{
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi);
+  cursor: pointer;
 }
 
 .qualification__button:hover{
@@ -862,12 +881,10 @@ td .fas{
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.575);
   border-radius: .5rem;
   overflow: hidden;
-  cursor: none;
 }
 
 .work__img img{
   transition: 1s;
-  cursor: none;
 }
 
 .work__img img:hover{
@@ -1263,7 +1280,6 @@ td .fas{
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
-  cursor: none;
 }
 
 #back-to-top-btn:hover,
@@ -1373,11 +1389,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 body::-webkit-scrollbar-thumb:hover{
-  background-color: var(--cursor-color);
+  background-color: var(--first-color);
 }
 
 body::-webkit-scrollbar-thumb:active{
-  background-color: var(--cursor-color);
+  background-color: var(--first-color);
 }
 
 

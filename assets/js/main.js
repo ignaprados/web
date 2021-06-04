@@ -30,8 +30,10 @@ if (usrAg.indexOf("Chrome") > -1 || usrAg.indexOf("Safari") > -1) {
 
 var $cursor = jQuery("#js-cursor");
 var $cursor__big = jQuery("#js-cursor__big");
+var $cursor__big2 = jQuery("#js-cursor__big2");
 var $cursor__small = jQuery("#js-cursor__small");
 var $links = jQuery(".curserhover, .call-to-action");
+var $links2 = jQuery(".curserhover2, .call-to-action2");
 
 
 jQuery(window).on("mousemove", function (e) {
@@ -57,6 +59,21 @@ $links.on("mouseleave", function (e) {
   $cursor__small.css(browserPrefix + "transform", "scale(1)");
 });
 
+$links2.on("mouseenter", function (e) {
+  $cursor__big2.css(browserPrefix + "transform", "scale(1)");
+});
+
+$links2.on("mouseleave", function (e) {
+  $cursor__big2.css(browserPrefix + "transform", "scale(0)");
+});
+
+$links2.on("mouseenter", function (e) {
+  $cursor__small.css(browserPrefix + "transform", "scale(0)");
+});
+
+$links2.on("mouseleave", function (e) {
+  $cursor__small.css(browserPrefix + "transform", "scale(1)");
+});
 
 
 /* ===== MENU SHOW ===== */
