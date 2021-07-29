@@ -418,6 +418,7 @@ $(document).ready(function() {
     swipe: false,
     pauseOnHover: false,
     pauseOnFocus:false,
+    lazyLoad: 'progressive',
     responsive: [{
       breakpoint: 880,
       settings: {
