@@ -214,7 +214,7 @@ function easeInOutCubic(t, b, c, d) {
 /* ==================== DARK LIGHT THEME ==================== */
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'bxs-toggle-right'
+const iconTheme = 'bxs-sun'
 const themeImage = document.getElementById('logo')
 const imgTheme = 'dark-img'
 const themeImage1 = document.getElementById('navlogo')
@@ -231,7 +231,7 @@ const getCurrentImg = () => themeImage.classList.contains(imgTheme) ? 'dark-img'
 
 const getCurrentImg1 = () => themeImage1.classList.contains(imgTheme) ? 'dark-img' : 'light-img'
 
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bxs-toggle-right'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bxs-moon' : 'bxs-sun'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
@@ -242,7 +242,7 @@ if (selectedTheme) {
 
     themeImage1.classList[selectedImg === 'dark-img' ? 'add' : 'remove'](imgTheme)
 
-    themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
+    themeButton.classList[selectedIcon === 'bxs-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button

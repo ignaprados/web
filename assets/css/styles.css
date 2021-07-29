@@ -140,11 +140,15 @@ body.dark-theme{
 
 .nav__item .change-theme{
   display: flex;
-  margin-top: -0.1em;
+  margin: auto;
   text-align: center;
   color: var(--title-color);
-  font-size: 2rem;
-  cursor: pointer
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav__item .change-theme:hover{
+  color: var(--first-color);
 }
 
 
@@ -348,10 +352,12 @@ img{
 
 .nav__link{
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .nav__link:hover{
   position: relative;
+  color: var(--first-color);
 }
 
 .nav__link:hover::after{
@@ -361,7 +367,6 @@ img{
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
 }
 
 .nav__logo{
