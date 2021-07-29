@@ -408,7 +408,7 @@ $(document).ready(function() {
   $('.customer-logos').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000,
     arrows: false,
     dots: false,
@@ -432,6 +432,12 @@ $(document).ready(function() {
     }]
   });
 });
+
+/*Whe page load, in 3 seconds set autoplay to true*/
+setTimeout(function(){
+  $('.customer-logos').slick('slickPlay');
+}, 3000);
+
 
 
 
