@@ -373,6 +373,11 @@ img{
   color: var(--second-color);
   display: flex;
   padding-top: 0;
+  transition: all 0.3s ease;
+}
+
+.nav__logo:hover{
+  color: var(--first-color);
 }
 
 .nav__img{
@@ -677,7 +682,7 @@ img{
 
 
 .send__description{
-  text-align: justify;
+  text-align: left;
   color: var(--card2-color);
   margin-bottom: var(--mb-3);
 }
