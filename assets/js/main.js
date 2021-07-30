@@ -408,7 +408,7 @@ $(document).ready(function() {
   $('.customer-logos').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     arrows: false,
     dots: false,
@@ -418,7 +418,6 @@ $(document).ready(function() {
     swipe: false,
     pauseOnHover: false,
     pauseOnFocus:false,
-    lazyLoad: 'progressive',
     responsive: [{
       breakpoint: 880,
       settings: {
@@ -432,11 +431,6 @@ $(document).ready(function() {
     }]
   });
 });
-
-/*Whe page load, in 3 seconds set autoplay to true*/
-setTimeout(function(){
-  $('.customer-logos').slick('slickPlay');
-}, 3000);
 
 
 
