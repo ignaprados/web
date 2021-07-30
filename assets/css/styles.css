@@ -452,6 +452,7 @@ img{
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
+  transition: all .3s ease;
 }
 
 .home__social-icon:hover{
@@ -496,14 +497,14 @@ img{
 
 /* ===== TEXT CHANGE ===== */
 .home__title,.spin:after{
-  content:'UX/UI.';
+  content:'St ING Inform.';
   animation: text 9s linear infinite;
 }
 
 @keyframes text {
 
   30% {
-    content: "Diseñador.";
+    content: "Diseñador UI.";
   }
   60% {
     content: "Front-End Dev.";
@@ -724,6 +725,7 @@ td .fas{
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi);
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 .qualification__button:hover{
@@ -979,7 +981,8 @@ td .fas{
 .footer__icon{
   font-size: 1.5rem;
   color: var(--second-color);
-  margin: 0 var(--mb-2)
+  margin: 0 var(--mb-2);
+  transition: all .3s ease;
 }
 
 .footer__icon:hover{
