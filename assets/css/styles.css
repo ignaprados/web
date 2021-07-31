@@ -681,11 +681,21 @@ img{
   text-align: center;
 }
 
-
 .send__description{
   text-align: left;
   color: var(--card2-color);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-4);
+
+}
+
+.send__description1{
+  text-align: left;
+  color: var(--card2-color);
+  margin-bottom: var(--mb-1);
+  margin-top: var(--mb-2);
+  padding: 20px;
+  border: var(--first-color) 2px solid;
+  border-radius: 1rem;
 }
 
 .infome{
@@ -1753,6 +1763,58 @@ body::-webkit-scrollbar-thumb:active{
     color: var(--fourth-color);
   }
 }
+
+/* Tarjeta Social Contact*/
+.tarjcont{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.tarjeta{
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+  border: 2px solid var(--first-color);
+  border-radius: 1rem;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.tarjeta:hover{
+  background-color: var(--nav-color);
+  color: var(--first-color) !important;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta i{
+  font-size: 30px;
+}
+
+.tar {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: none;
+}
+
+@media (max-width: 362px) {
+  .tar {
+    font-size: 14px;
+  }
+  .tarjeta i{
+    font-size: 20px;
+  }
+  }
+
+@media (max-width: 320px) {
+  .mail {
+    font-size: 12px;
+  }
+  }
 
 
 
