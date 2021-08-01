@@ -1529,6 +1529,10 @@ body::-webkit-scrollbar-thumb:active{
   margin-top: 10px;
 }
 
+.my-body-noscroll-class {
+  overflow: hidden !important;
+}
+
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
