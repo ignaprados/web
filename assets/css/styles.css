@@ -912,7 +912,6 @@ td .fas{
 
 .work__img img:hover{
   transform: scale(1.2);
-  filter: grayscale(1);
 }
 
 .hab__img{

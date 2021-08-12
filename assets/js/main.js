@@ -322,7 +322,7 @@ btnCerrarPopup2.addEventListener('click', function(e){
 });
 
 /* ===== POPUP WORK 3 =====*/
-var btnAbrirPopup3 = document.getElementById('btn-abrir-popup3'),
+/*var btnAbrirPopup3 = document.getElementById('btn-abrir-popup3'),
 	overlay3 = document.getElementById('overlay3'),
 	popup3 = document.getElementById('popup3'),
     btnCerrarPopup3 = document.getElementById('btn-cerrar-popup3');
@@ -339,7 +339,7 @@ btnCerrarPopup3.addEventListener('click', function(e){
 	overlay3.classList.remove('active');
     popup3.classList.remove('active');
     html3.classList.remove('my-body-noscroll-class');
-});
+});*/
 
 /* ===== POPUP WORK 4 =====*/
 var btnAbrirPopup4 = document.getElementById('btn-abrir-popup4'),
@@ -400,6 +400,27 @@ btnCerrarPopup6.addEventListener('click', function(e){
     popup6.classList.remove('active');
     html6.classList.remove('my-body-noscroll-class');
 });
+
+/* ===== POPUP WORK 8 =====*/
+var btnAbrirPopup8 = document.getElementById('btn-abrir-popup8'),
+	overlay8 = document.getElementById('overlay8'),
+	popup8 = document.getElementById('popup8'),
+    btnCerrarPopup8 = document.getElementById('btn-cerrar-popup8');
+    html8 = document.querySelector('html');
+
+btnAbrirPopup8.addEventListener('click', function(){
+	overlay8.classList.add('active');
+    popup8.classList.add('active');
+    html8.classList.add('my-body-noscroll-class');
+});
+
+btnCerrarPopup8.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay8.classList.remove('active');
+    popup8.classList.remove('active');
+    html8.classList.remove('my-body-noscroll-class');
+});
+
 
 /*========== QUALIFICATION  TABS ==========*/
 const tabs = document.querySelectorAll('[data-target]'),
