@@ -421,6 +421,66 @@ btnCerrarPopup8.addEventListener('click', function(e){
     html8.classList.remove('my-body-noscroll-class');
 });
 
+/* ===== POPUP WORK 11 =====*/
+var btnAbrirPopup11 = document.getElementById('btn-abrir-popup11'),
+	overlay11 = document.getElementById('overlay11'),
+	popup11 = document.getElementById('popup11'),
+    btnCerrarPopup11 = document.getElementById('btn-cerrar-popup11');
+    html11 = document.querySelector('html');
+
+btnAbrirPopup11.addEventListener('click', function(){
+	overlay11.classList.add('active');
+    popup11.classList.add('active');
+    html11.classList.add('my-body-noscroll-class');
+});
+
+btnCerrarPopup11.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay11.classList.remove('active');
+    popup11.classList.remove('active');
+    html11.classList.remove('my-body-noscroll-class');
+});
+
+/* ===== POPUP WORK 10 =====*/
+var btnAbrirPopup10 = document.getElementById('btn-abrir-popup10'),
+	overlay10 = document.getElementById('overlay10'),
+	popup10 = document.getElementById('popup10'),
+    btnCerrarPopup10 = document.getElementById('btn-cerrar-popup10');
+    html10 = document.querySelector('html');
+
+btnAbrirPopup10.addEventListener('click', function(){
+	overlay10.classList.add('active');
+    popup10.classList.add('active');
+    html10.classList.add('my-body-noscroll-class');
+});
+
+btnCerrarPopup10.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay10.classList.remove('active');
+    popup10.classList.remove('active');
+    html10.classList.remove('my-body-noscroll-class');
+});
+
+/* ===== POPUP WORK 12 =====*/
+var btnAbrirPopup12 = document.getElementById('btn-abrir-popup12'),
+	overlay12 = document.getElementById('overlay12'),
+	popup12 = document.getElementById('popup12'),
+    btnCerrarPopup12 = document.getElementById('btn-cerrar-popup12');
+    html12 = document.querySelector('html');
+
+btnAbrirPopup12.addEventListener('click', function(){
+	overlay12.classList.add('active');
+    popup12.classList.add('active');
+    html12.classList.add('my-body-noscroll-class');
+});
+
+btnCerrarPopup12.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay12.classList.remove('active');
+    popup12.classList.remove('active');
+    html12.classList.remove('my-body-noscroll-class');
+});
+
 
 /*========== QUALIFICATION  TABS ==========*/
 const tabs = document.querySelectorAll('[data-target]'),
