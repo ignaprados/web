@@ -532,6 +532,18 @@ $(document).ready(function() {
 });
 
 
+/* ========== AUTOHIDE NAV ON SCROLL ==========*/
+var prev = 0;
+var $window = $(window);
+var nav = $(".l-header");
+
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass("hidden", scrollTop > prev);
+  prev = scrollTop;
+});
+
+
 
 
 /* ===== IGNACIO PRADOS ===== */
