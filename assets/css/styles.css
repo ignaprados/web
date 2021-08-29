@@ -497,11 +497,18 @@ img{
 
 /* ===== TEXT CHANGE ===== */
 .home__title,.spin:after{
-  content:'St ING Inform.';
+  content:'Front-End Dev.';
   animation: text 9s linear infinite;
 }
 
 @keyframes text {
+
+  50% {
+    content: "Diseñador UI.";
+  }
+}*
+
+/*@keyframes text {
 
   30% {
     content: "Diseñador UI.";
@@ -509,7 +516,7 @@ img{
   60% {
     content: "Front-End Dev.";
   }
-}
+}*/
 
 
 /* ===== BUTTONS ===== */
