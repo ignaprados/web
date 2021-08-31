@@ -4,17 +4,52 @@
 
 
 /* ===== INTRO ===== */
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-/*
-tl.to(".text", { y: "0%", duration: 1.7, stagger: 0.25 });
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });*/
+const tl = gsap.timeline({ defaults: { ease: Power1.easeInOut } });
+const home = document.getElementById('home')
 
-tl.to(".text", { y: "0%", duration: .85, stagger: 0.25 });
+tl.set("html", { overflowY: "hidden" });
+tl.fromTo(".text", { opacity: 0 }, { opacity: 1, duration: .85, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: .75, delay: 0.25 });
 tl.to(".intro", { y: "-100%", duration: .5 }, "-=.5");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: .40 });
+tl.to("html", { overflowY: "visible", delay: -0.20});
+tl.fromTo("#home", { opacity: 0 }, { opacity: 1, duration: .40, delay: -0.36 });
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: .40, delay: -0.29  });
+tl.to(".custom-cursor", { opacity: 1, duration: .2 }, "-=.5");
+
+/* ===== OUTRO ===== */
+const page = document.querySelector('[data-id]')
+
+function redirect(project){
+    console.log('redirect')
+    const tl2 = new gsap.timeline({ defaults: { ease: Power1.easeInOut } });
+    tl2.set(".custom-cursor", { opacity: 0 });
+    tl2.set("#back-to-top-btn", { display: "none" });
+    tl2.set("html", { overflowY: "hidden" });
+    tl2.set(".intro", { opacity: 0},);
+    tl2.set(".text" , { opacity: 0},);
+    tl2.set(".intro", { y: "0%"},);
+    tl2.to(".intro", { opacity: 1, duration: .5 },);
+    setTimeout(function(){
+        window.location.href = '/assets/pages/'+ project +'.html';
+    }, 1200);
+}
+
+function redirectback(path,anchor){
+    console.log('redirect')
+    const tl2 = new gsap.timeline({ defaults: { ease: Power1.easeInOut } });
+    tl2.set(".custom-cursor", { opacity: 0 });
+    tl2.set("#back-to-top-btn", { display: "none" });
+    tl2.set("html", { overflowY: "hidden" });
+    tl2.set(".intro", { opacity: 0},);
+    tl2.set(".text" , { opacity: 0},);
+    tl2.set(".intro", { y: "0%"},);
+    tl2.to(".intro", { opacity: 1, duration: .5 },);
+    setTimeout(function(){
+        window.location.href = '/'+ path +'.html' + anchor;
+    }, 1200);
+}
+
+
 
 /* ===== SIGUERATONES ===== */
 
@@ -144,12 +179,14 @@ sr.reveal('.customer-logos',{delay: 200, origin: 'top'});
 sr.reveal('.work__img',{interval: 150, origin:'top'});
 
 /* = SCROLL LET'S TALK = */
-sr.reveal('.send__content1',{delay: 200, origin: 'bottom'});
-sr.reveal('.exp2',{delay: 200, origin: 'bottom'});
+/*sr.reveal('.send__content1',{delay: 200, origin: 'bottom'});
+sr.reveal('.exp2',{delay: 200, origin: 'bottom'});*/
 
 /* = SCROLL CONTACT = */
-sr.reveal('.contact__input',{interval: 200});
+/*sr.reveal('.contact__input',{interval: 200});*/
 
+/* = SCROLL PROJECT = */
+sr.reveal('.video',{delay:100, origin:'top'});
 
 /* ===== BACK TO TOP BUTTON ===== */
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -282,208 +319,9 @@ function scrollActive(){
         }
     })
 }
+if(window.location.pathname === '/index.html'){
 window.addEventListener('scroll', scrollActive)
-
-
-/* ===== POPUP WORK =====*/
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-    btnCerrarPopup = document.getElementById('btn-cerrar-popup');
-    html = document.querySelector('html');
-
-btnAbrirPopup.addEventListener('click', function(){
-	overlay.classList.add('active');
-    popup.classList.add('active');
-    html.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay.classList.remove('active');
-    popup.classList.remove('active');
-    html.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 2 =====*/
-var btnAbrirPopup2 = document.getElementById('btn-abrir-popup2'),
-	overlay2 = document.getElementById('overlay2'),
-	popup2 = document.getElementById('popup2'),
-    btnCerrarPopup2 = document.getElementById('btn-cerrar-popup2');
-    html2 = document.querySelector('html');
-
-btnAbrirPopup2.addEventListener('click', function(){
-	overlay2.classList.add('active');
-    popup2.classList.add('active');
-    html2.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup2.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay2.classList.remove('active');
-    popup2.classList.remove('active');
-    html2.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 3 =====*/
-/*var btnAbrirPopup3 = document.getElementById('btn-abrir-popup3'),
-	overlay3 = document.getElementById('overlay3'),
-	popup3 = document.getElementById('popup3'),
-    btnCerrarPopup3 = document.getElementById('btn-cerrar-popup3');
-    html3 = document.querySelector('html');
-
-btnAbrirPopup3.addEventListener('click', function(){
-	overlay3.classList.add('active');
-    popup3.classList.add('active');
-    html3.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup3.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay3.classList.remove('active');
-    popup3.classList.remove('active');
-    html3.classList.remove('my-body-noscroll-class');
-});*/
-
-/* ===== POPUP WORK 4 =====*/
-var btnAbrirPopup4 = document.getElementById('btn-abrir-popup4'),
-	overlay4 = document.getElementById('overlay4'),
-	popup4 = document.getElementById('popup4'),
-    btnCerrarPopup4 = document.getElementById('btn-cerrar-popup4');
-    html4 = document.querySelector('html');
-
-btnAbrirPopup4.addEventListener('click', function(){
-	overlay4.classList.add('active');
-    popup4.classList.add('active');
-    html4.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup4.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay4.classList.remove('active');
-    popup4.classList.remove('active');
-    html4.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 5 =====*/
-var btnAbrirPopup5 = document.getElementById('btn-abrir-popup5'),
-	overlay5 = document.getElementById('overlay5'),
-	popup5 = document.getElementById('popup5'),
-    btnCerrarPopup5 = document.getElementById('btn-cerrar-popup5');
-    html5 = document.querySelector('html');
-
-btnAbrirPopup5.addEventListener('click', function(){
-	overlay5.classList.add('active');
-    popup5.classList.add('active');
-    html5.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup5.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay5.classList.remove('active');
-    popup5.classList.remove('active');
-    html5.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 6 =====*/
-var btnAbrirPopup6 = document.getElementById('btn-abrir-popup6'),
-	overlay6 = document.getElementById('overlay6'),
-	popup6 = document.getElementById('popup6'),
-    btnCerrarPopup6 = document.getElementById('btn-cerrar-popup6');
-    html6 = document.querySelector('html');
-
-btnAbrirPopup6.addEventListener('click', function(){
-	overlay6.classList.add('active');
-    popup6.classList.add('active');
-    html6.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup6.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay6.classList.remove('active');
-    popup6.classList.remove('active');
-    html6.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 8 =====*/
-var btnAbrirPopup8 = document.getElementById('btn-abrir-popup8'),
-	overlay8 = document.getElementById('overlay8'),
-	popup8 = document.getElementById('popup8'),
-    btnCerrarPopup8 = document.getElementById('btn-cerrar-popup8');
-    html8 = document.querySelector('html');
-
-btnAbrirPopup8.addEventListener('click', function(){
-	overlay8.classList.add('active');
-    popup8.classList.add('active');
-    html8.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup8.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay8.classList.remove('active');
-    popup8.classList.remove('active');
-    html8.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 11 =====*/
-var btnAbrirPopup11 = document.getElementById('btn-abrir-popup11'),
-	overlay11 = document.getElementById('overlay11'),
-	popup11 = document.getElementById('popup11'),
-    btnCerrarPopup11 = document.getElementById('btn-cerrar-popup11');
-    html11 = document.querySelector('html');
-
-btnAbrirPopup11.addEventListener('click', function(){
-	overlay11.classList.add('active');
-    popup11.classList.add('active');
-    html11.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup11.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay11.classList.remove('active');
-    popup11.classList.remove('active');
-    html11.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 10 =====*/
-var btnAbrirPopup10 = document.getElementById('btn-abrir-popup10'),
-	overlay10 = document.getElementById('overlay10'),
-	popup10 = document.getElementById('popup10'),
-    btnCerrarPopup10 = document.getElementById('btn-cerrar-popup10');
-    html10 = document.querySelector('html');
-
-btnAbrirPopup10.addEventListener('click', function(){
-	overlay10.classList.add('active');
-    popup10.classList.add('active');
-    html10.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup10.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay10.classList.remove('active');
-    popup10.classList.remove('active');
-    html10.classList.remove('my-body-noscroll-class');
-});
-
-/* ===== POPUP WORK 12 =====*/
-var btnAbrirPopup12 = document.getElementById('btn-abrir-popup12'),
-	overlay12 = document.getElementById('overlay12'),
-	popup12 = document.getElementById('popup12'),
-    btnCerrarPopup12 = document.getElementById('btn-cerrar-popup12');
-    html12 = document.querySelector('html');
-
-btnAbrirPopup12.addEventListener('click', function(){
-	overlay12.classList.add('active');
-    popup12.classList.add('active');
-    html12.classList.add('my-body-noscroll-class');
-});
-
-btnCerrarPopup12.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay12.classList.remove('active');
-    popup12.classList.remove('active');
-    html12.classList.remove('my-body-noscroll-class');
-});
+}
 
 
 /*========== QUALIFICATION  TABS ==========*/

@@ -1,0 +1,310 @@
+<!-- ===== IGNACIO PRADOS ===== -->
+<!-- ===== IGNACIO PRADOS ===== -->
+<!-- ===== IGNACIO PRADOS ===== -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <!-- ===== TITTLE ===== -->
+        <title>Ignacio Prados</title>
+
+        <!-- ===== META ===== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+        <meta name="description" content="Portfolio de Ignacio Prados como Software Developer."/>
+
+        <!-- ===== OG ===== -->
+        <meta property="og:title" content="Portfolio de Ignacio Prados" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/favicon.png" />
+        <meta property="og:description" content="Portfolio de Ignacio Prados como Software Developer." />
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="..//css/styles.css">
+        <!-- ===== FAVICON ===== -->
+        <link  rel="icon"   href="..//img/favicon.png" type="image/png" />
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== FONT AWESOME ===== -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+    <body>
+        <div class="custom-cursor" id="js-cursor">
+            <div class="cursor__small abs-center" id="js-cursor__small"></div>
+            <div class="cursor__big abs-center" id="js-cursor__big"></div>
+            <div class="cursor__big2 abs-center" id="js-cursor__big2"></div>
+        </div>
+
+
+        <!-- ===== HEADER ===== -->
+        <header class="l-header">
+
+            <!-- ===== NAV BAR ===== -->
+            <nav class="nav bd-grid">
+
+                <div>
+                    <a onclick="redirectback('index','')"data-id="page" class="nav__logo curserhover"><img  class="nav__img" id="navlogo" src="..//img/logo-nav.png" alt="Logo Ignacio Prados"><p>Ignacio Prados</p></a>
+                </div>
+
+                <!-- ===== NAV MENU ===== -->
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a onclick="redirectback('index','')"  data-id="page" class="nav__link active curserhover"></a></li>
+                        <li class="nav__item"><a onclick="redirectback('index','#about')" data-id="page" class="nav__link curserhover">Sobre Mi</a></li>
+                        <li class="nav__item"><a onclick="redirectback('index','#experiencia')" data-id="page" class="nav__link curserhover">Experiencia</a></li>
+                        <li class="nav__item"><a onclick="redirectback('index','#work')" data-id="page" class="nav__link curserhover">Proyectos</a></li>
+                        <li class="nav__item"><a onclick="redirectback('index','#skills')" data-id="page" class="nav__link curserhover">Skills</a></li>
+                        <li class="nav__item"><a onclick="redirectback('index','#contacto')" data-id="page" class="nav__link curserhover">Contacto</a></li>
+
+                        <li class="nav__item"><i class='bx bxs-moon change-theme curserhover' id="theme-button"></i></li>
+                    </ul>
+
+                </div>
+
+                <!-- ===== NAV MENU MOBILE ICON ===== -->
+                <div class="nav__toggle curserhover" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main class="l-main">
+
+
+
+            <!-- ===== BACK TO TOP BUTTON ===== -->
+            <button id="back-to-top-btn" class="curserhover"><i class="fas fa-angle-double-up"></i></button>
+
+            <!-- ===== HOME ===== -->
+            <section class="home bd-grid" id="home" style="display: none;">
+
+                <!-- ===== TITTLE & CONTACT BUTTON ===== -->
+            <!--<div class="home__data">
+                    <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Ignacio.</span><br><span class="spin"></span></h1>
+                    <a href="#contacto" class="button curserhover2" ><i class="far fa-comments"></i> | Hablemos</a>
+                </div>
+
+                <!-- ===== SOCIAL ICONS ===== -->
+        <!--    <div class="home__social">
+                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="home__social-icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://www.instagram.com/ignaciodev" target="_blank" class="home__social-icon curserhover"><i class='fab fa-instagram' style="font-weight:600;" ></i></a>
+                    <a href="https://github.com/IgnacioPrados" target="_blank" class="home__social-icon curserhover"><i class='fab fa-github' ></i></a>
+                    <!--<a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="home__social-icon curserhover"><i class='far fa-envelope' ></i></a>-->
+        <!--    </div>
+
+                <!-- ===== LOGO ===== -->
+                <div class="home__img" id="logo">
+                <img src="../../assets/img/perfil2.png" alt="Logo Ignacio Prados">
+                </div>
+
+            </section>
+
+
+
+            
+
+            <!-- ===== WORK ===== -->
+            <section class="work section1 send2" id="titulo">
+            <div class="container1">
+                <img src="../img/banner7.JPG" alt="">
+            </div>
+            <div style="height: 100px; overflow: hidden;" class="svgwave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--nav-color);"></path></svg></div>
+            <div class="wave send__container2 addpadding">
+
+                <h2 class="section-title2 section-title-center send__title1 titulomarg">Simon Says</h2>
+                <p class="section__subtitle span2 exp subtitulo">Web App del juego Simón dice.</p>
+
+                    <div class="work__container send__container">
+                    
+                        <div class="wave send__container2 nopadding">
+                            <div class="send__content">
+                                <p class="send__description">Este es un juego muy divertido, me acuerdo que tenía la <b>versión física</b> cuando era chico, ya era hora de recrear la
+                                    versión online, utilizando un poco de <b>JavaScript</b> y manipulando el <b>DOM</b>. Cuenta con un diseño muy simple y retro.
+                                </p>
+    
+                                <!-- ===== VIEW SITE ===== -->
+                                <a href="https://simonsaysgame.vercel.app/" target="_blank" class="buttoncv curserhover2 projectlink" ><i class="fas fa-external-link-square-alt"></i> | Proyecto</a>
+                                <a href="https://github.com/IgnacioPrados/SimonSaysGame" target="_blank" class="buttoncv curserhover2" ><i class='fab fa-github' ></i> | Código Fuente</a>
+                                    
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                        
+            </div>
+            
+            </section>
+
+
+            <!-- ===== SKILLS ===== -->
+            <section class="work section1" id="video">
+            <div style="height: 100px; overflow: hidden;background-color: var(--nav-color);" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--wave-color);"></path></svg></div>
+            <div class="wave send__container3">
+
+                <div class="video">
+                    <span class="circle"><i class="fas fa-video fa-2x"></i></span>
+                    <iframe src="https://www.youtube.com/embed/ROcfKMUpW5M?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="work__container send__container">
+                    <div class="wave send__container2 nopadding">
+                        <div class="send__content addpadding send3">
+                        <span class="circle2"><i class="fas fa-question-circle fa-4x"></i></span>
+                        <h2 class="section-title-center send__title">Detalles</h2>
+                        <p class="send__description lessfont">Después de aprender a manipular bien el <b>DOM</b> de la web, gracias a <b><a href="https://www.appbrewery.co/" target="_blank" style="color: var(--card2-color);" class="curserhover" >TheAppBrewery</a></b> por el curso de Udemy, me propuse crear 
+                            este juego. El juego consiste en que el usuario tiene que apretar los botones, en el <b>orden</b> correcto que se muestra en pantalla.
+                            <br><br>
+                            Creé el juego en agosto de 2021. Cuenta con <b>niveles y patrones infinitos</b>, totalmente aleatorios, para que el usuario se divierta. Esto lo logré creando valores Random con JavaScript. Intenta superar mi record!
+                        </p>
+                        <h2 class="section-title-center send__title">Tecnologías</h2>
+
+                         <!-- ===== TECH SLIDER ===== -->
+                        <div class="sliderlogo2">
+                            <div class="customer-logos">
+                                <div class="slide" ><img src="..//img/html.png" alt="HTML5"><p>HTML5</p></div>
+                                <div class="slide" ><img src="..//img/css.png" alt="CSS3"><p>CSS3</p></div>
+                                <div class="slide" ><img src="..//img/js.png" alt="JavaScript"><p>JavaScript</p></div>
+                                <div class="slide" ><img src="..//img/git.png" alt="Git & GitHub"><p>Git & GitHub</p></div>
+                                <div class="slide" ><img src="..//img/terminal.png" alt="terminal"><p>Terminal</p></div>
+                                <div class="slide" ><img src="..//img/gofo.png" alt="GoogleFonts"><p>GoogleFonts</p></div>
+                                <div class="slide" ><img src="..//img/jquery.png" alt="JQuery"><p>JQuery</p></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!--========== CONTACT==========-->
+            <section class="send1 section1 contact" id="cto">
+                <svg viewBox="0 0 1920 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="var(--wave-color)" d="M 0 0 C 388.40000000000003 0 582.5999999999999 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="var(--wave-color)" d="M 970 110 C 1350 110 1540 0 1920 0 L 1920 0 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>
+                <div id="contacto"><br></div>
+                <div class="send__container1">
+                    <div class="send__content1 bd-grid">
+                        <h2 class="section-title-center send__title1">¿Te divirtió el juego?</h2>
+                        <p class="send__description1 noborder centertxt">Me especializo en crear experiencias digitales únicas 🎮
+                        </p>
+
+                         <!-- TARJETAS DE CONTACTO -->
+                        <div class="tarjcont">
+                            <a onclick="redirectback('index','#contacto')" data-id="page" class="tarjeta curserhover2 centertxt">
+                                <p class="tar mail wei">Ponerse en contacto</p>
+                            </a>
+                        </div> 
+
+
+
+                        <!-- ===== EMAIL BUTTON ===== -->
+                    <!--<a href="mailto:ignacioprados.ip@gmail.com" class="button buttonct1 bd-grid curserhover2" ><i class='far fa-envelope' ></i> | Mandame un Email</a>
+                        <a href="https://api.whatsapp.com/send?phone=+541122386183" class="button buttonct1 bd-grid curserhover2" target="_blank" ><i class="fab fa-whatsapp"></i> | Hablemos por WhatsApp </a>-->
+                    </div>
+                </div>
+
+
+                <div class="send__container1">
+                    <div class="send__content1 bd-grid flex1">
+
+                         <!-- TARJETAS DE CONTACTO -->
+                        <div class="tarjcont2">
+                            <a onclick="redirectback('index','#work')" data-id="page" class="tarjeta2 curserhover2 centertxt nomargin">
+                                <p class="tar mail">Volver al inicio</p>
+                            </a>
+                        </div> 
+                        <div class="tarjcont2">
+                            <a onclick="redirect('tindog')" data-id="page" class="tarjeta2 curserhover2 centertxt nomargin">
+                                <p class="tar mail">Siguiente proyecto</p>
+                            </a>
+                        </div> 
+
+                  </div>
+                </div>
+
+                            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--wave1-color)" opacity="0.5" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--wave2-color)" opacity="0.6"/>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--wave3-color)" opacity="0.7"/>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill= "var(--wave4-color)" opacity="1" />
+                </g>
+                </svg>
+                </div>
+            </section>
+
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer">
+
+                <!-- ===== FOOTER TITLE ===== -->
+            <div class="content flex">
+
+                <p class="footer__title">Ignacio Prados</p>
+
+                <!-- ===== FOOTER SOCIAL LINKS ===== -->
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="footer__icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://www.instagram.com/ignaciodev" target="_blank" class="footer__icon curserhover"><i class='fab fa-instagram' style="font-weight:600;" ></i></a>
+                    <a href="https://github.com/IgnacioPrados" target="_blank" class="footer__icon curserhover"><i class='fab fa-github' ></i></a>
+                    <!--<a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="footer__icon curserhover"><i class='far fa-envelope' ></i></a>-->
+                </div>
+
+                <!-- ===== FOOTER COPYRIGHT ===== -->
+                <p class="footer__copy">&#169; 2021 Ignacio Prados. Todos los derechos reservados.</p>
+            </div>
+            </footer>
+
+            <!-- ===== INTRO ANIMATION ===== -->
+            <div class="intro">
+                <div class="intro-text">
+                    <h1 class="hide">
+                        <span class="text"></span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text"><img src="/assets/img/logo3d.png" style="transform: scale(.5);"></span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text"></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="slider"></div>
+
+
+            <!-- ===== GSAP JS LIBRARY ===== -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+                integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+                crossorigin="anonymous"
+            ></script>
+
+            <!-- ===== JQUERY LIBRARY ===== -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <!--===== MAIN JS =====-->
+            <script src="..//js/main.js"></script>
+            <!--===== SLICK JS =====-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        </div>
+    </body>
+</html>
+
+<!-- ===== IGNACIO PRADOS ===== -->
+<!-- ===== IGNACIO PRADOS ===== -->
+<!-- ===== IGNACIO PRADOS ===== -->
