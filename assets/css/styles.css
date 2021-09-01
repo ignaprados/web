@@ -52,7 +52,7 @@ body.dark-theme{
   --wave3-color: rgb(37, 37, 37);
   --wave4-color: rgb(48, 48, 48);
   --cursor-color:#8b72af ;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 
 
@@ -211,7 +211,7 @@ body{
   color: var(--second-color);
   background-color: var(--body-color);
   overflow-x: hidden;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
