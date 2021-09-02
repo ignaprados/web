@@ -301,95 +301,6 @@ themeButton.addEventListener('click', () => {
 })
 
 
-/* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
-const sections = document.querySelectorAll('section[id]')
-var cont = true;
-function scrollActive(){
-    const scrollY = window.pageYOffset
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-            if (sectionId === 'contact' && cont === true){ /* START CONFETTI JS*/
-              confetti.start();
-              setTimeout(function(){confetti.stop();cont = false;},3000);/* STOP CONFETTI JS*/
-            }
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-            confetti.stop();/* STOP CONFETTI JS*/
-        }
-    })
-}
-if(window.location.pathname === '/index.html'){
-window.addEventListener('scroll', scrollActive)
-}
-
-
-/*========== QUALIFICATION  TABS ==========*/
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
-
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
-
-        tabs.forEach(tab =>{
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})
-
-/* ========== SKILLS SLIDER ==========*/
-$(document).ready(function() {
-  $('.customer-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    arrows: false,
-    dots: false,
-    draggable: false,
-    touchMove: false,
-    swipeToSlide: false,
-    swipe: false,
-    pauseOnHover: false,
-    pauseOnFocus:false,
-    responsive: [{
-      breakpoint: 880,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 550,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-  });
-});
-
-
-/* ========== AUTOHIDE NAV ON SCROLL ==========*/
-var prev = 0;
-var $window = $(window);
-var nav = $(".l-header");
-
-$window.on("scroll", function () {
-  var scrollTop = $window.scrollTop();
-  nav.toggleClass("hidden", scrollTop > prev);
-  prev = scrollTop;
-});
-
-
 /* ========== CONFETTI JS ==========*/
 
 var confetti = {
@@ -521,6 +432,96 @@ var confetti = {
 		e = !1
 	}
 }();
+
+
+/* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
+const sections = document.querySelectorAll('section[id]')
+var activarconfetti = true;
+function scrollActive(){
+    const scrollY = window.pageYOffset
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+            if (sectionId === 'contact' && activarconfetti === true){ /* START CONFETTI JS*/
+              confetti.start();
+              setTimeout(function(){confetti.stop(); activarconfetti = false;},3000);/* STOP CONFETTI JS*/
+            }
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+            confetti.stop();/* STOP CONFETTI JS*/
+        }
+    })
+}
+if(window.location.pathname === '/index.html'){
+window.addEventListener('scroll', scrollActive)
+}
+
+
+/*========== QUALIFICATION  TABS ==========*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
+
+/* ========== SKILLS SLIDER ==========*/
+$(document).ready(function() {
+  $('.customer-logos').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    draggable: false,
+    touchMove: false,
+    swipeToSlide: false,
+    swipe: false,
+    pauseOnHover: false,
+    pauseOnFocus:false,
+    responsive: [{
+      breakpoint: 880,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+
+
+/* ========== AUTOHIDE NAV ON SCROLL ==========*/
+var prev = 0;
+var $window = $(window);
+var nav = $(".l-header");
+
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass("hidden", scrollTop > prev);
+  prev = scrollTop;
+});
+
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
