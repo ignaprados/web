@@ -304,9 +304,8 @@ themeButton.addEventListener('click', () => {
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
 /* ==================== ACTIVATE CONFETTI ==================== */
 const sections = document.querySelectorAll('section[id]')
-var activarconfetti = true;
-console.log("confeti true");
 function scrollActive(){
+    var activarconfetti = true;
     const scrollY = window.pageYOffset
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
