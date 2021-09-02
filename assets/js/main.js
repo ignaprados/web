@@ -452,7 +452,6 @@ function scrollActive(){
             }
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-            confetti.stop();/* STOP CONFETTI JS*/
         }
     })
 }
