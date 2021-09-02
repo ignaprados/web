@@ -432,6 +432,7 @@ var confetti = {
 
 
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
+/* ==================== ACTIVATE CONFETTI ==================== */
 const sections = document.querySelectorAll('section[id]')
 var activarconfetti = true;
 function scrollActive(){
