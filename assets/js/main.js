@@ -314,19 +314,16 @@ function scrollActive(){
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-            console.log("confeti 1");
             if (sectionId === 'contact' && activarconfetti === true){ /* START CONFETTI JS*/
               confetti.start();
-              console.log("confeti started");
               setTimeout(function(){confetti.stop(); activarconfetti = false;},3000);/* STOP CONFETTI JS*/
             }
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-            console.log("no confetti");
         }
     })
 }
-if(window.location.pathname === '/index.html'){
+if(window.location.pathname === '/index.html' || window.location.pathname === '/'){
 window.addEventListener('scroll', scrollActive)
 }
 
