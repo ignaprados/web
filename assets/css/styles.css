@@ -694,6 +694,14 @@ img{
   padding-bottom: var(--mb-4);
 }
 
+#bottom {
+  margin-top: 0rem;
+}
+
+#top {
+  margin-bottom: 1rem;
+}
+
 .send__container2{
   padding-bottom: 2.5rem;
   background-color: var(--nav-color);
@@ -1691,6 +1699,10 @@ body::-webkit-scrollbar-thumb:active{
   cursor: pointer;
 }
 
+.tarjcont3{
+  margin-top: 0px;
+}
+
 .wei{
   font-weight: 500;
 }
@@ -1932,6 +1944,25 @@ body::-webkit-scrollbar-thumb:active{
   padding-bottom: 0;
 }
 
+
+/*=== CLOCK ===*/
+.clock {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.stat {
+  padding-left: .3em;
+  padding-right: .3em;
+  justify-content: center;
+  display: inline;
+}
+
+.statuscircle {
+    margin: auto;
+    text-align: center;
+}
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */

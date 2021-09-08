@@ -520,6 +520,63 @@ var confetti = {
 }();
 
 
+/* ========== CLOCK ==========*/
+
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  var statusColor = '';
+  var statusText = "";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+
+  /* Change status depending on the time */
+  if (h < 8 && session == "AM") {
+    statusColor = "#0373fc";
+    statusText = "Actualmente estoy durmiendo";
+  }
+
+  if (h >= 8 && session == "AM") {
+    statusColor = "#FFA500";
+    statusText = "Actualmente estoy estudiando";
+  }
+
+  if (h < 6 && session == "PM") {
+    statusColor = "#bf1919";
+    statusText = "Actualmente estoy en clase";
+  }
+
+  if (h >= 6 && session == "PM") {
+    statusColor = "#15c215";
+    statusText = "Actualmente estoy descansando";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time;
+  document.getElementById("status").innerText = statusText;
+  $('.statuscircle').css('color', statusColor);
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
+
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
