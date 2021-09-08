@@ -331,7 +331,7 @@ img{
   font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 904px){
   .nav__menu{
     position: fixed;
     top: var(--header-height);
@@ -399,13 +399,13 @@ img{
   object-position: center;
 }
 
-@media screen and (min-width: 975px){
+@media screen and (min-width: 980px){
   .nav__img{
     display: none;
   }
 }
 
-@media screen and (max-width: 975px){
+@media screen and (max-width: 980px){
 .nav__logo p{
   display: none;
 }
@@ -666,7 +666,7 @@ img{
     }
   }
 
-  @media screen and (max-width: 880px){
+  @media screen and (max-width: 904px){
   .send1{
       background: var(--nav-color) !important;
   }
@@ -1091,7 +1091,7 @@ td .fas{
   }
 }
 
-@media screen and (min-width: 880px){
+@media screen and (min-width: 904px){
   body{
     margin: 0;
   }
@@ -1666,7 +1666,7 @@ body::-webkit-scrollbar-thumb:active{
   }
 }
 
-@media (max-width: 880px){
+@media (max-width: 904px){
   :root{
     --wave1-color: #b7a1d6;
     --wave2-color: #a38ac5;
