@@ -580,7 +580,7 @@ function showTime(){
 showTime();
 
 
-/* ==================== CHANGE LANGUAJE ES/EN ==================== */
+/* ==================== CHANGE LANGUAGE ES/EN ==================== */
 
 
 /* ===== IGNACIO PRADOS ===== */
