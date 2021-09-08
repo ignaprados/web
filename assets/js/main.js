@@ -527,38 +527,40 @@ function showTime(){
   var h = date.getHours(); // 0 - 23
   var m = date.getMinutes(); // 0 - 59
   var s = date.getSeconds(); // 0 - 59
-  var session = "AM";
   var statusColor = '';
   var statusText = "";
-  
-  if(h == 0){
-      h = 12;
-  }
-  
-  if(h > 12){
-      h = h - 12;
-      session = "PM";
-  }
+  var session = "AM";
 
   /* Change status depending on the time */
-  if (h < 8 && session == "AM") {
+  if ((h == 0 || h == 24) || h < 08) {
     statusColor = "#0373fc";
     statusText = "Actualmente estoy durmiendo";
   }
 
-  if (h >= 8 && session == "AM") {
+  if (h >= 08 && h < 14) {
     statusColor = "#FFA500";
     statusText = "Actualmente estoy estudiando";
   }
 
-  if (h < 6 && session == "PM") {
+  if ( h >= 14 && h < 18) {
     statusColor = "#bf1919";
     statusText = "Actualmente estoy en clase";
   }
 
-  if (h >= 6 && session == "PM") {
+  if (h >= 18 && h < 24) {
     statusColor = "#15c215";
     statusText = "Actualmente estoy descansando";
+  }
+
+  /* Change AM/PM */
+  if(h == 0 || h == 24){
+    h = 12;
+    session = "PM";
+  }
+
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
   }
   
   h = (h < 10) ? "0" + h : h;
