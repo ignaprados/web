@@ -527,29 +527,43 @@ function showTime(){
   var h = date.getHours(); // 0 - 23
   var m = date.getMinutes(); // 0 - 59
   var s = date.getSeconds(); // 0 - 59
+  var d = date.getDay(); // 0-6
   var statusColor = '';
   var statusText = "";
   var session = "AM";
 
-  /* Change status depending on the time */
-  if ((h == 0 || h == 24) || h < 08) {
-    statusColor = "#0373fc";
-    statusText = "Actualmente estoy durmiendo";
-  }
+  /* Check if its week or weekend */
+  if (d != 0 && d != 6) {
+    /* Change status depending on the time */
+    if ((h == 0 || h == 24) || h < 08) {
+      statusColor = "#0373fc";
+      statusText = "Actualmente estoy durmiendo";
+    }
 
-  if (h >= 08 && h < 14) {
-    statusColor = "#FFA500";
-    statusText = "Actualmente estoy estudiando";
-  }
+    else if (h >= 08 && h < 14) {
+      statusColor = "#FFA500";
+      statusText = "Actualmente estoy estudiando";
+    }
 
-  if ( h >= 14 && h < 18) {
-    statusColor = "#bf1919";
-    statusText = "Actualmente estoy en clase";
-  }
+    else if ( h >= 14 && h < 18) {
+      statusColor = "#bf1919";
+      statusText = "Actualmente estoy en clase";
+    }
 
-  if (h >= 18 && h < 24) {
-    statusColor = "#15c215";
-    statusText = "Actualmente estoy descansando";
+    else if (h >= 18 && h < 24)  {
+      statusColor = "#15c215";
+      statusText = "Actualmente estoy descansando";
+    }
+  } else {
+      /* Change status depending on the time */
+      if ((h == 0 || h == 24) || h < 08) {
+        statusColor = "#0373fc";
+        statusText = "Actualmente estoy durmiendo";
+      }
+      else if (h >= 8 && h < 24)  {
+        statusColor = "#15c215";
+        statusText = "Actualmente estoy descansando";
+      }
   }
 
   /* Change AM/PM */
