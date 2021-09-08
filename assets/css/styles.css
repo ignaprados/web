@@ -1964,6 +1964,18 @@ body::-webkit-scrollbar-thumb:active{
     text-align: center;
 }
 
+/*change languaje*/
+
+.lang {
+  color: var(--second-color);
+  transition: all 0.3s ease 0s;
+}
+
+.lang:hover{
+  color: var(--first-color);
+}
+
+
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
