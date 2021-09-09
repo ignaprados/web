@@ -954,10 +954,10 @@ td .fas{
 .work__img img{
   transition: 1s;
 }
-
+/*
 .work__img img:hover{
   transform: scale(1.2);
-}
+}*/
 
 .hab__img{
   overflow: hidden;
@@ -1973,6 +1973,85 @@ body::-webkit-scrollbar-thumb:active{
 .lang:hover{
   color: var(--first-color);
 }
+
+
+/*=== WORK IMAGES ===*/
+.snip1321 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+.snip1321 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+.snip1321 h2,
+.snip1321 h4 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.snip1321 h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.snip1321 h4 {
+  font-weight: 500;
+  font-size: 1em;
+}
+.snip1321:after {
+  background-color: #1b1b1b;
+  border-radius: .5rem;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.snip1321:hover figcaption,
+.snip1321.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.snip1321:hover:after,
+.snip1321.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 1;
+}
+
 
 
 /* ===== IGNACIO PRADOS ===== */
