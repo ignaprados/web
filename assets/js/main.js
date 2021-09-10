@@ -590,9 +590,9 @@ function showTime(){
   setTimeout(showTime, 1000);
   
 }
-
+if(window.location.pathname === '/index.html' || window.location.pathname === '/'){
 showTime();
-
+}
 
 /* ==================== CHANGE LANGUAGE ES/EN ==================== */
 
