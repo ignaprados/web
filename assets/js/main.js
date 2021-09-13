@@ -594,6 +594,16 @@ if(window.location.pathname === '/index.html' || window.location.pathname === '/
 showTime();
 }
 
+
+/* ==================== DINAMIC COPYRIGHT YEAR ==================== */
+function copyright() {
+  copyrightYear = new Date().getFullYear();
+  copyFinal = "© "  + copyrightYear + " Made by IgnacioPrados";
+  document.getElementById("copy").innerText = copyFinal;
+};
+copyright();
+
+
 /* ==================== CHANGE LANGUAGE ES/EN ==================== */
 
 
