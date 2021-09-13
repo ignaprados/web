@@ -595,7 +595,7 @@ showTime();
 }
 
 
-/* ==================== DINAMIC COPYRIGHT YEAR ==================== */
+/* ==================== DYNAMIC COPYRIGHT YEAR ==================== */
 function copyright() {
   copyrightYear = new Date().getFullYear();
   copyFinal = "© "  + copyrightYear + " Made by IgnacioPrados";
