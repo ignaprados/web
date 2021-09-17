@@ -303,11 +303,70 @@
             <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--nav-color);"></path></svg></div>
             <div class="wave send__container2">
 
-                <h2 class="section-title2 section-title-center send__title1">Proyectos Recientes</h2>
-                <p class="section__subtitle span2 exp">Un poco de lo que estuve haciendo últimamente.</p>
+                <h2 class="section-title2 section-title-center send__title1">Proyectos Destacados</h2>
+                <p class="section__subtitle span2 exp">Lo mejor de mi trabajo hasta ahora.</p>
+
+                <div class="project-container">
+                    <div class="project">
+                      <div class="project-content">
+                        <div class="project-label">Landing Page</div>
+                        <h4 class="project-title">Llanos EcoLodge</h4>
+                        <div class="project-details">
+                          <p>Página web responsive para empresa de alojamiento. Pensada para que el cliente obtenga informanción concreta del servicio que brindan.</p>
+                          <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>fullPage.js</li>
+                          </ul>
+                        </div>
+                        <a class="button bd-grid curserhover2 verproyecto" onclick="redirect('llanosecolodge')" data-id="page" >Ver Proyecto</a>
+                      </div>
+                      
+                      <div class="project-img curserhover2 snip1321-2" onclick="redirect('llanosecolodge')" data-id="page">
+                        <img src="assets/img/banner1.jpg" alt="" />
+                        <figcaption>
+                            <h4>Website</h4>
+                            <h2>llanosecolodge</h2>
+                          </figcaption>
+                      </div>
+                      
+                    </div>
+
+                    <div class="project-2">
+                        <div class="project-content-2">
+                          <div class="project-label-2">Asistente de Voz</div>
+                          <h4 class="project-title-2">Emma Bot</h4>
+                          <div class="project-details-2">
+                            <p>Web que reconoce lo que dice el usuario a través de la voz y responde. Cuenta chistes, datos interesantes y más. Es solo cuestión de activar el micrófono y hablar con ella.</p>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>jQuery</li>
+                              <li>HTML5</li>
+                              <li>CSS3</li>
+                            </ul>
+                          </div>
+                          <a class="button bd-grid curserhover2 verproyecto" onclick="redirect('emmabot')" data-id="page" >Ver Proyecto</a>
+                        </div>
+                        
+                        <div class="project-img-2 curserhover2 snip1321-2" onclick="redirect('emmabot')" data-id="page">
+                          <img src="assets/img/banner5.jpg" alt="" />
+                          <figcaption>
+                              <h4>WebApp</h4>
+                              <h2>Emma Bot</h2>
+                            </figcaption>
+                        </div>
+                        
+                      </div>
+
+                  </div>
+
+                  <!-- ===== OTHER WORK ===== -->
+                  <h2 class="section-title2 section-title-center send__title1">Otros Proyectos</h2>
+                  <p class="section__subtitle span2 exp">Lo que estuve haciendo últimamente.</p>
 
                     <div class="work__container bd-grid">
-
+<!--
                         <div class="work__img curserhover snip1321" onclick="redirect('llanosecolodge')" data-id="page">
                             <img src="assets/img/work6.jpg" alt="Proyecto sobre llanosecolodge">
                             <figcaption>
@@ -315,7 +374,7 @@
                                 <h2>llanosecolodge</h2>
                               </figcaption>
                         </div>
-
+-->
                         <div class="work__img curserhover snip1321" onclick="redirect('listadetareas')" data-id="page" >
                             <img src="assets/img/work7.jpg" alt="Proyecto sobre lista de tareas" >
                             <figcaption>
@@ -339,7 +398,7 @@
                                 <h2>Wallpaper X</h2>
                               </figcaption>
                         </div>
-
+<!--
                         <div class="work__img curserhover snip1321" onclick="redirect('emmabot')" data-id="page" >
                             <img src="assets/img/work8.jpg" alt="Proyecto sobre Asistente de Voz" >
                             <figcaption>
@@ -347,7 +406,7 @@
                                 <h2>Emma Bot</h2>
                               </figcaption>
                         </div>
-
+-->
                         <div class="work__img curserhover snip1321" onclick="redirect('calculadora')" data-id="page" >
                             <img src="assets/img/work13.jpg" alt="Proyecto sobre calculadora"  >
                             <figcaption>
@@ -371,7 +430,7 @@
                                 <h2>PIZZAX</h2>
                               </figcaption>
                         </div>
-
+<!--
                         <div class="work__img curserhover snip1321" onclick="redirect('drumkit')" data-id="page" >
                             <img src="assets/img/work10.jpg" alt="Proyecto sobre drumkit" >
                             <figcaption>
@@ -379,13 +438,13 @@
                                 <h2>Drum Kit</h2>
                               </figcaption>
                         </div>
-                        
+-->                      
 
                     </div>
 
                     <!-- ===== GITHUB BUTTON ===== -->
                     <div class="ab__container bd-grid">
-                        <a id="seemore" href="https://github.com/IgnacioPrados" target="_blank" class="button bd-grid curserhover2" ><i class='fab fa-github' ></i> | Ver Más</a>
+                        <a id="seemore" class="button bd-grid curserhover2" onclick="redirect('proyectos')" data-id="page" >Ver Todos</a>
                     </div>
 
             </div>
@@ -411,7 +470,7 @@
                         <div class="slide" ><img src="assets/img/node.png" alt="Node.js & Express.js"><p>Node.js & Express.js</p></div>
                         <!--<div class="slide" ><img src="assets/img/react.png" alt="React & React Native"><p>React & React Native</p></div>-->
                         <div class="slide" ><img src="assets/img/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
-                        <div class="slide" ><img src="assets/img/jquery.png" alt="JQuery"><p>JQuery</p></div>
+                        <div class="slide" ><img src="assets/img/jquery.png" alt="jQuery"><p>jQuery</p></div>
                         <div class="slide" ><img src="assets/img/npm.png" alt="npm"><p>npm</p></div>
                         <div class="slide" ><img src="assets/img/git.png" alt="Git & GitHub"><p>Git & GitHub</p></div>
                         <div class="slide" ><img src="assets/img/terminal.png" alt="terminal"><p>Terminal</p></div>
