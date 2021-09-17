@@ -176,6 +176,8 @@ sr.reveal('.about__text',{interval: 200, origin: 'bottom'});
 sr.reveal('.customer-logos',{delay: 200, origin: 'top'});
 
 /* = SCROLL WORK = */
+sr.reveal('.project',{delay: 200, origin: 'right'});
+sr.reveal('.project-2',{delay: 200, origin: 'left'});
 sr.reveal('.work__img',{interval: 150, origin:'top'});
 
 /* = SCROLL LET'S TALK = */
