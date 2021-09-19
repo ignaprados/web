@@ -536,6 +536,11 @@ img{
 
 
 /* ===== BUTTONS ===== */
+
+#seemore {	
+  cursor: pointer;
+}
+
 .button{
   display: inline-block;
   background-color: var(--first-color);
