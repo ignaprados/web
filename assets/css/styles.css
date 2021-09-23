@@ -511,30 +511,6 @@ img{
 }
 
 
-/* ===== TEXT CHANGE ===== */
-.home__title,.spin:after{
-  content:'Front-End Dev.';
-  animation: text 9s linear infinite 1s;
-}
-
-@keyframes text {
-
-  50% {
-    content: "Diseñador UI.";
-  }
-}*
-
-/*@keyframes text {
-
-  30% {
-    content: "Diseñador UI.";
-  }
-  60% {
-    content: "Front-End Dev.";
-  }
-}*/
-
-
 /* ===== BUTTONS ===== */
 
 #seemore {	
@@ -687,6 +663,12 @@ img{
     padding-bottom: 5%;
     background-color: var(--wave-color);
   }
+
+  #slogan {
+    font-size: 1.8em !important;
+    padding-bottom: 18px;
+  }
+
   }
 
 .send__container{

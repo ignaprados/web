@@ -607,8 +607,16 @@ function copyright() {
 copyright();
 
 
-/* ==================== CHANGE LANGUAGE ES/EN ==================== */
+/* ==================== TIPYNG TITLE ANIMATION ==================== */
+window.ityped.init(document.querySelector('.ityped'),{
+  strings: ['Front-End Dev ','Diseñador UI '],
+  loop: true,
+  typeSpeed:  150,
+  backDelay: 3000,
+})
 
+
+/* ==================== CHANGE LANGUAGE ES/EN ==================== */
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
