@@ -2568,6 +2568,15 @@ padding: 5px 10px;
   padding: 5px 10px;
 }
 
+.vl {
+  border-left: 8px dotted var(--second-color);
+  border-radius: 0px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  transform: translateY(-15px);
+}
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
