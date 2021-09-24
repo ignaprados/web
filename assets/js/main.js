@@ -159,7 +159,7 @@ sr.reveal('.home__social-icon',{ interval: 300, origin: 'top'});
 
 
 /* = SCROLL ABOUT = */
-sr.reveal('.lema',{origin: 'bottom'});
+sr.reveal('.lema',{origin: 'top'});
 sr.reveal('.buttoncv',{origin:'bottom'});
 sr.reveal('.send__content',{delay: 300, origin: 'left'});
 sr.reveal('.send__img',{delay: 300, origin: 'right'});

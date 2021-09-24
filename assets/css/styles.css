@@ -667,6 +667,22 @@ img{
   #slogan {
     font-size: 1.8em !important;
     padding-bottom: 18px;
+    color: var(--second-color) !important;
+  }
+
+  .llenar {
+    background-image: none !important;
+    transition: all 0s ease !important;
+  }
+
+  .llenar:hover {
+    background-image: none !important;
+    transition: all 0s ease !important;
+  }
+
+  .blanco {
+    color: var(--second-color) !important;
+    transition: all 0s ease !important;
   }
 
   }
@@ -2559,6 +2575,26 @@ padding: 5px 10px;
   margin-left: -3px;
   transform: translateY(-15px);
 }
+
+.llenar {
+  background: var(--nav-color);
+  background-image: url(../../assets/img/liquid.png);
+  background-repeat: repeat-x;
+  background-position: 0 -110%;
+  transition: .3s ease;
+}
+
+.llenar:hover {
+  background-position: 100% 100%;
+}
+
+.blanco {
+  color: var(--nav-color) !important;
+  transition: all .3s ease;
+}
+
+
+
 
 /* ===== IGNACIO PRADOS ===== */
 /* ===== IGNACIO PRADOS ===== */
