@@ -609,7 +609,7 @@ copyright();
 
 /* ==================== TIPYNG TITLE ANIMATION ==================== */
 window.ityped.init(document.querySelector('.ityped'),{
-  strings: ['Front-End Dev ','Diseñador UI '],
+  strings: ['Front-End Dev ','UI Designer'],
   loop: true,
   typeSpeed:  150,
   backDelay: 3000,
