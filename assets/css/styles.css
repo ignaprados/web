@@ -63,6 +63,58 @@ body.dark-theme{
 }
 
 
+/* ===== INTRO =====*/
+.intro {
+  background: black;
+  position: fixed;
+  z-index: var(--z-fixed) !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  background: var(--body-color);
+  position: fixed;
+  z-index: var(--z-fixed);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 9rem;
+  z-index: var(--z-fixed);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+  z-index: var(--z-fixed);
+  font-size: 9rem;
+}
+
+.hide span {
+  opacity: 0;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+  z-index: var(--z-fixed);
+}
+
+
 /* ===== SIGUERATONES ===== */
 .abs-center {
   position: absolute;
@@ -307,7 +359,7 @@ img{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 99;
   background-color: var(--blur-color);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -1419,58 +1471,6 @@ td .fas{
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-}
-
-
-/* ===== INTRO =====*/
-.intro {
-  background: black;
-  position: fixed;
-  z-index: var(--z-fixed);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider {
-  background: var(--body-color);
-  position: fixed;
-  z-index: var(--z-fixed);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-}
-
-.intro-text {
-  color: rgb(233, 233, 233);
-  font-family: "Heebo", sans-serif;
-  font-size: 9rem;
-  z-index: var(--z-fixed);
-}
-
-.hide {
-  background: black;
-  overflow: hidden;
-  padding-left: 2%;
-  padding-right: 2%;
-  box-sizing: border-box;
-  z-index: var(--z-fixed);
-  font-size: 9rem;
-}
-
-.hide span {
-  opacity: 0;
-  display: inline-block;
-  padding-left: 2%;
-  padding-right: 2%;
-  box-sizing: border-box;
-  z-index: var(--z-fixed);
 }
 
 
