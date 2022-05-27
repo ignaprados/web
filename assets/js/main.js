@@ -607,9 +607,25 @@ function copyright() {
 copyright();
 
 
+/* ==================== DYNAMIC YEARS OLD ==================== */
+function calcularEdad() {
+  var hoy = new Date();
+  var cumpleanos = new Date(2003, 04, 26);
+  var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+  var m = hoy.getMonth() - cumpleanos.getMonth();
+
+  if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+      edad--;
+  }
+
+  document.getElementById("edad").innerText = (edad + " years old");
+};
+calcularEdad();
+
+
 /* ==================== TIPYNG TITLE ANIMATION ==================== */
 window.ityped.init(document.querySelector('.ityped'),{
-  strings: ['Front-End Dev ','UI Designer'],
+  strings: ['Front-End Dev ','UI Designer '],
   loop: true,
   typeSpeed:  150,
   backDelay: 3000,
