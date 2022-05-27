@@ -540,32 +540,32 @@ function showTime(){
     /* Change status depending on the time */
     if ((h == 0 || h == 24) || h < 08) {
       statusColor = "#0373fc";
-      statusText = "Actualmente estoy durmiendo";
+      statusText = "I am currently sleeping";
     }
 
     else if (h >= 08 && h < 14) {
       statusColor = "#FFA500";
-      statusText = "Actualmente estoy estudiando";
+      statusText = "I am currently working";
     }
 
     else if ( h >= 14 && h < 18) {
       statusColor = "#bf1919";
-      statusText = "Actualmente estoy en clase";
+      statusText = "I am currently in class";
     }
 
     else if (h >= 18 && h < 24)  {
       statusColor = "#15c215";
-      statusText = "Actualmente estoy descansando";
+      statusText = "I am currently in my free time";
     }
   } else {
       /* Change status depending on the time */
       if ((h == 0 || h == 24) || h < 08) {
         statusColor = "#0373fc";
-        statusText = "Actualmente estoy durmiendo";
+        statusText = "I am currently sleeping";
       }
       else if (h >= 8 && h < 24)  {
         statusColor = "#15c215";
-        statusText = "Actualmente estoy descansando";
+        statusText = "I am currently in my free time";
       }
   }
 
