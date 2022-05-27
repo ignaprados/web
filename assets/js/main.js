@@ -116,6 +116,9 @@ $links2.on("mouseleave", function (e) {
 
 
 /* ===== MENU SHOW ===== */
+
+scrollEnabled = true; // Enable scroll
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -123,6 +126,7 @@ const showMenu = (toggleId, navId) =>{
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show')
+            toggleScroll()  // toggle scroll
         })
     }
 }
@@ -133,6 +137,7 @@ showMenu('nav-toggle','nav-menu')
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
+toggleScroll()  // toggle scroll
 /*Active link*/
 navLink.forEach(n => n.classList.remove('active'));
 this.classList.add('active');
@@ -142,6 +147,7 @@ const navMenu = document.getElementById('nav-menu')
 navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
 
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
@@ -630,6 +636,65 @@ window.ityped.init(document.querySelector('.ityped'),{
   typeSpeed:  150,
   backDelay: 3000,
 })
+
+
+/* ==================== DISABLE SCROLL ON EVENT ==================== */
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+  scrollEnabled = false;
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+  scrollEnabled = true;
+}
+
+
+// create a toggle function to disable/enable scroll
+function toggleScroll() {
+  if (window.addEventListener) {
+    if (scrollEnabled) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+  }
+}
+
 
 
 /* ==================== CHANGE LANGUAGE ES/EN ==================== */
