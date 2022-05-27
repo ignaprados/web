@@ -137,7 +137,11 @@ showMenu('nav-toggle','nav-menu')
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
-toggleScroll()  // toggle scroll
+  // if this is in mobile
+  if(window.innerWidth <= 904){
+    toggleScroll()  // toggle scroll
+  }
+
 /*Active link*/
 navLink.forEach(n => n.classList.remove('active'));
 this.classList.add('active');
