@@ -345,12 +345,27 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--blur-color);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background-color: var(--nav-color);
     color: var(--second-color);
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+  }
+
+  .l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--nav-color);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.205);
+    /* Transition On scroll*/
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+
   }
 
   .home__img{
