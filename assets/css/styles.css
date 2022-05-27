@@ -24,6 +24,7 @@
   --five-color: #000;
   --body-color: rgb(228, 228, 228);
   --nav-color: #efefef;
+  --blur-color: rgba(239, 239, 239, 0.90);
   --card-color:#FFF;
   --card2-color:#363636;
   --wave-color: #ffffff;
@@ -45,6 +46,7 @@ body.dark-theme{
   --five-color: rgb(255, 255, 255);
   --body-color: rgb(37, 37, 37);
   --nav-color: rgb(48, 48, 48);
+  --blur-color: rgba(48, 48, 48, 0.90);
   --card-color:#363636;
   --card2-color:#FFF;
   --wave-color: rgb(58, 58, 58);
@@ -306,7 +308,9 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--nav-color);
+  background-color: var(--blur-color);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.205);
   /* Transition On scroll*/
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
@@ -341,7 +345,9 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--nav-color);
+    background-color: var(--blur-color);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     color: var(--second-color);
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
