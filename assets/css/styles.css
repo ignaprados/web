@@ -408,7 +408,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: 99;
     background-color: var(--nav-color);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
