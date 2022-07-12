@@ -1536,7 +1536,7 @@ td .fas{
 
   .work__container{
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    /*grid-template-rows: repeat(2,1fr);*/
     column-gap: 2rem;
   }
 
@@ -2573,11 +2573,12 @@ body::-webkit-scrollbar-thumb:active{
 
 .project-container-2 {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 70px auto;
 }
 
 .project-2 {
   margin: 30px;
+  margin-bottom: 50px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(12, 1fr);
