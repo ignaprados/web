@@ -1313,7 +1313,7 @@ td .fas{
 }
 
 .work__img{
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.575);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.275);
   border-radius: .5rem;
   overflow: hidden;
   cursor: pointer;
@@ -1536,7 +1536,7 @@ td .fas{
 
   .work__container{
     grid-template-columns: repeat(3, 1fr);
-    /*grid-template-rows: repeat(2,1fr);*/
+    grid-template-rows: repeat(4,1fr);
     column-gap: 2rem;
   }
 
@@ -2334,15 +2334,16 @@ body::-webkit-scrollbar-thumb:active{
   font-size: 1em;
 }
 .snip1321:after {
-  background-color: #1b1b1b;
+  background-color: #1b1b1bd1;
+  border: solid 6px var(--first-color);
   border-radius: .5rem;
   position: absolute;
   content: "";
   display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transform: rotateX(-90deg);
@@ -2411,14 +2412,15 @@ body::-webkit-scrollbar-thumb:active{
   font-size: 1em;
 }
 .snip1321-2:after {
-  background-color: #1b1b1b;
+  background-color: #1b1b1bd1;
+  border: solid 6px var(--first-color);
   border-radius: 15px;
   position: absolute;
   content: "";
   display: block;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
   bottom: -2px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
