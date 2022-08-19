@@ -54,6 +54,11 @@ function redirect2(project,id){
   window.open('https://www.behance.net/gallery/'+ id + '/' + project, '_blank');
 }
 
+function redirect3(web){
+  console.log('new tab')
+  window.open('https://'+ web, '_blank');
+}
+
 
 
 /* ===== SIGUERATONES ===== */
