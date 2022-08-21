@@ -3108,6 +3108,12 @@ padding: 5px 10px;
   -moz-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
+
+.cd-timeline-navigation a:hover {
+  border-color: var(--first-color);
+  color: var(--first-color);
+}
+
 .cd-timeline-navigation a::after {
   /* arrow icon */
   content: '>';
