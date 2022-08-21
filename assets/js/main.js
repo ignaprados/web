@@ -187,7 +187,7 @@ sr.reveal('.send__img',{delay: 300, origin: 'right'});
 /* = SCROLL EXPERIENCE = */
 sr.reveal('.qualification__button',{origin:'top'});
 sr.reveal('.exp',{origin:'top'});
-sr.reveal('.container',{origin:'top'});
+sr.reveal('.container',{delay: 300, origin:'bottom'});
 
 /* = SCROLL SKILLS = */
 sr.reveal('.section-title2',{origin:'top'});
