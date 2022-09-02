@@ -605,12 +605,12 @@ function showTime(){
   /* Check if its week or weekend */
   if (d != 0 && d != 6) {
     /* Change status depending on the time */
-    if ((h == 0 || h == 24) || h < 08) {
+    if ((h == 0 || h == 24) || h < 07) {
       statusColor = "#0373fc";
       statusText = "I am currently sleeping";
     }
 
-    else if (h >= 08 && h < 14) {
+    else if (h >= 07 && h < 14) {
       statusColor = "#FFA500";
       statusText = "I am currently working";
     }
@@ -621,8 +621,8 @@ function showTime(){
     }
 
     else if (h >= 18 && h < 24)  {
-      statusColor = "#15c215";
-      statusText = "I am currently in my free time";
+      statusColor = "#FFA500";
+      statusText = "I am currently studying";
     }
   } else {
       /* Change status depending on the time */
